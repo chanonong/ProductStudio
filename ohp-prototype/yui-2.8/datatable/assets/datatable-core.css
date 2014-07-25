@@ -1,0 +1,6 @@
+/*!
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.8.2r1
+*/.yui-skin-sam .yui-dt-mask{position:absolute;z-index:9500}.yui-dt-tmp{position:absolute;left:-9000px}.yui-dt-scrollable .yui-dt-bd{overflow:auto}.yui-dt-scrollable .yui-dt-hd{overflow:hidden;position:relative}.yui-dt-scrollable .yui-dt-bd thead tr,.yui-dt-scrollable .yui-dt-bd thead th{position:absolute;left:-1500px}.yui-dt-scrollable tbody{-moz-outline:0}.yui-skin-sam thead .yui-dt-sortable{cursor:pointer}.yui-skin-sam thead .yui-dt-draggable{cursor:move}.yui-dt-coltarget{position:absolute;z-index:999}.yui-dt-hd{zoom:1}th.yui-dt-resizeable .yui-dt-resizerliner{position:relative}.yui-dt-resizer{position:absolute;right:0;bottom:0;height:100%;cursor:e-resize;cursor:col-resize;background-color:#CCC;opacity:0;filter:alpha(opacity=0)}.yui-dt-resizerproxy{visibility:hidden;position:absolute;z-index:9000;background-color:#CCC;opacity:0;filter:alpha(opacity=0)}th.yui-dt-hidden .yui-dt-liner,td.yui-dt-hidden .yui-dt-liner,th.yui-dt-hidden .yui-dt-resizer{display:none}.yui-dt-editor{position:absolute;z-index:9000}

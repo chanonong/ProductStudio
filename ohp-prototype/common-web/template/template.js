@@ -1,0 +1,11 @@
+/*
+ * Copyright (c) Orchestral Developments Ltd (2001 - 2014).
+ *
+ * This document is copyright. Except for the purpose of fair reviewing, no part
+ * of this publication may be reproduced or transmitted in any form or by any
+ * means, electronic or mechanical, including photocopying, recording, or any
+ * information storage and retrieval system, without permission in writing from
+ * the publisher. Infringers of copyright render themselves liable for
+ * prosecution.
+ */
+YAHOO.namespace("ORCHESTRAL.util"),function(){var e=YAHOO.lang,t=YAHOO.util.Dom,n=YAHOO.util.Event,r=ORCHESTRAL.util.Registry,i=function(n,r){i.superclass.constructor.call(this,n,r);var s=t.getFirstChildBy(this.get("element"),function(e){return t.hasClass(e,"template")});if(e.isNull(s))return;this._template=s.cloneNode(!0),this.removeChild(s),t.removeClass(t.getChildren(this.get("element")),"template");if(ORCHESTRAL.env.ua.ie==8){var o=t.getAncestorByClassName(this.get("element"),"repeating-list");if(o){var u=function(){t.removeClass(o,"repeating-list"),t.addClass(o,"repeating-list")};this.subscribe("add",u,null,this),this.subscribe("remove",u,null,this)}}};e.extend(i,YAHOO.util.Element,{initAttributes:function(n){i.superclass.initAttributes.call(this,n),this.setAttributeConfig("repeatInitHandler",{writeOnce:!0,validator:e.isFunction,method:function(n){this.on("add",function(e){n(e.element,e.index)});var r=t.getChildrenBy(this.get("element"),function(t){return e.isNumber(Number(t.getAttribute("repeat")))});for(var i=0;i<r.length;i++)n(r[i],Number(r[i].getAttribute("repeat")))}})},destroy:function(){n.purgeElement(this.get("element"),!0)},_template:null,add:function(){if(e.isNull(this._template))return;var n=t.getChildren(this.get("element")).length?Number(t.getLastChild(this.get("element")).getAttribute("repeat"))+1:0,r=this.get("element").appendChild(this._template.cloneNode(!0));r.innerHTML=e.substitute(r.innerHTML,{index:+n}),r.setAttribute("repeat",n),t.replaceClass(r,"template","template-repeat"),this.fireEvent("add",{element:r,index:n})},remove:function(e){e=t.get(e),this.removeChild(e),n.purgeElement(e,!0),this.fireEvent("remove",{element:e})}}),ORCHESTRAL.util.Template=i}(),YAHOO.register("orchestral-template",ORCHESTRAL.util.Template,{version:"7.9",build:"0"});

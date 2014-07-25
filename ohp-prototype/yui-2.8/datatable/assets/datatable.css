@@ -1,0 +1,6 @@
+/*!
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.8.2r1
+*/.yui-dt-table th,.yui-dt-table td{overflow:hidden}th .yui-dt-header{position:relative}th .yui-dt-label{position:relative;border-right:10px}th .yui-dt-resizer{position:absolute;margin-right:-6px;right:0;bottom:0;width:6px;height:100%;cursor:w-resize;cursor:col-resize}.yui-dt-scrollable{*overflow-y:auto}.yui-dt-scrollable thead{display:block}.yui-dt-scrollable thead tr{position:relative}.yui-dt-scrollbody{display:block;overflow:auto}.yui-dt-editor{position:absolute}

@@ -1,0 +1,11 @@
+/*
+ * Copyright (c) Orchestral Developments Ltd (2001 - 2014).
+ *
+ * This document is copyright. Except for the purpose of fair reviewing, no part
+ * of this publication may be reproduced or transmitted in any form or by any
+ * means, electronic or mechanical, including photocopying, recording, or any
+ * information storage and retrieval system, without permission in writing from
+ * the publisher. Infringers of copyright render themselves liable for
+ * prosecution.
+ */
+YUI.add("ohp-activity-tracker",function(e,t){"use strict";var n,r=e.namespace("OHP"),i=YUI.namespace("OHP.ActivityTracker"),s="ohp-activity-tracker-timestamp",o=2e3,u=new e.COW.ActivitySyncer(s);e.mix(i,{ACTIVITY_STORAGE_KEY:s,_ACTIVITY_THROTTLE_TIME:o}),n=e.Base.create("ohp-activity-tracker",e.Base,[],{initializer:function(){this._trackingEventSubscriptions=[],this._publishedEvents=[this.publish("activityDetected",{broadcast:2})],this._warningTimeoutHandler=e.Global.on("ohp-activity-timeout:warningTimeout",this._deleteActivityStorageKey,this),this._startTracking()},destructor:function(){this._stopTracking(),e.Array.invoke(this._publishedEvents,"detach"),this._warningTimeoutHandler&&this._warningTimeoutHandler.detach()},_startTracking:function(){var t=e.one(e.config.doc.body);this._doLogActivity({type:"ohp-activity-tracker:init"}),this._logActivity=e.throttle(e.bind(this._doLogActivity,this),i._ACTIVITY_THROTTLE_TIME),this._trackingEventSubscriptions.push(t.on("keydown",this._logActivity)),this._trackingEventSubscriptions.push(t.on("mousemove",this._logActivity)),this._trackingEventSubscriptions.push(t.on("touchstart",this._logActivity)),this._trackingEventSubscriptions.push(e.on("mousewheel",this._logActivity))},_stopTracking:function(){e.Array.invoke(this._trackingEventSubscriptions,"detach")},registerActivity:function(e){this._logActivity({type:e||"registeredActivity"})},_doLogActivity:function(t){var n=(new Date).valueOf(),r={timestamp:n,activity:t.type,url:e.config.win.location.href};u.broadcast(r),this.fire("activityDetected",r)},_deleteActivityStorageKey:function(){u.clear()}}),i._instance?r.ActivityTracker=i._instance:(r.ActivityTracker=new n,i._instance=r.ActivityTracker)},"7.9.0",{requires:["base","node-base","event-base","event-custom","event-touch","event-mousewheel","yui-throttle","json-stringify","array-invoke","cow-activity-syncer"]});

@@ -1,0 +1,1 @@
+This archive contains a distribution of OHP Web and YUI for use ONLY by prototypes.

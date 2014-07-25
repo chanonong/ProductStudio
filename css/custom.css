@@ -1,0 +1,93 @@
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+    
+
+
+
+#masthead {
+    min-height:270px;
+    background-color:#000044;
+    color:#aaaacc;
+}
+
+#masthead h1 {
+    font-size: 55px;
+    line-height: 1;
+}
+
+#masthead .well {
+    margin-top:13%;
+    background-color:#111155;
+    border-color:#000033;
+}
+
+.icon-bar {
+    background-color:#fff;
+}
+
+@media screen and (min-width: 768px) {
+    #masthead h1 {
+        font-size: 100px;
+    }
+}
+
+.navbar-bright {
+    background-color:#111155;
+    color:#fff;
+}
+  
+.navbar-bright a, #masthead a, #masthead .lead {
+    color:#aaaacc;
+}
+
+.navbar-bright li > a:hover {
+    background-color:#000033;
+}
+
+.affix-top,.affix{
+    /*position: static;*/
+}
+
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+    /*position: static;*/
+    height: 350px;
+    overflow: auto;
+    /*margin-top:30px;*/
+    /*width:228px;*/
+  }
+  
+  #sidebar.affix {
+    /*position: fixed;*/
+    /*top:70px;*/
+    /*width:228px;*/
+  }
+}
+
+.menu {
+    height: 400px;
+    overflow: auto;
+}
+.img-thumbnail {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#productInfo {
+    height: 350px;
+}
+#moduleInfo {
+    height: 350px;
+}
+
+#sidebar li.active {
+    border:0 #eee solid;
+    /*border-right-width:4px;*/
+}
+
+.table {
+    max-width: 100%;
+}

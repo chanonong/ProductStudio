@@ -1,0 +1,410 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello World Orion</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="http://yui.yahooapis.com/3.17.2/build/yui/yui-min.js"></script>
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="ohp-prototype/yui-3/cssgrids-responsive/cssgrids-responsive-min.css">
+    <link rel="stylesheet" type="text/css" href="ohp-prototype/common-web/assets/skins/hive/skin.css">
+<!--      <script type="text/javascript" src="ohp-prototype/common-web-base.js"></script>-->
+  </head>
+  <body>
+    <div class="container" >
+    <img src="http://www.dbvisit.com/images/uploads/caseStudies/orionhealth_logo.png" style="height: 32px; width: auto; " />
+    <h1 id="pageHeader" data-bind="text: pageHeader" style="display: inline;!important"></h1>
+      <hr>
+      <div class="row continer">
+        <div class="col-md-6" >
+          <h2>Products
+            <span id="cow-test-const-html-primary" class="yui-primary-button yui-push-button pull-right">
+            <span class="first-child" id="yui_3_17_2_3_1406187283540_92">
+              <button type="button" class="pull-right" data-toggle="modal" data-target="#addProduct" style="">
+                <span class="glyphicon glyphicon-plus"></span> Add
+              </button>
+            </span>
+          </span>
+          </h2>
+
+          <hr>
+          <div class="col-md-6">
+            <!-- Product Selection -->
+            <ul class="menu" id="menu-product" data-bind="foreach: products" style=" border-width: 1px;">
+              <div data-bind="foreach: $data.products" >
+                <li style="margin-bottom: 10px; padding-top: 10px; padding-left: 20px">
+                    <a data-bind="text: $data.name, click: $root.selectProduct"></a>
+                </li>
+                </div>
+            </ul>
+            <!-- end Product Selection -->
+            
+            
+          <!-- Modal addProduct -->
+          <div class="modal fade" id="addProduct" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <h3 class="modal-title" id="myModalLabel">Modal addProduct</h3>
+                </div>
+                <div class="modal-body">
+                  <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                      <label for="inputEditProductId" class="col-sm-4 control-label">Id</label>
+                      <div class="col-sm-8">
+                        <input type="text" class="form-control extra-long" id="inputAddProductId" placeholder="" data-bind="">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddProductName" class="col-sm-4 control-label">Name</label>
+                      <div class="col-sm-8">
+                        <input type="text" class="form-control extra-long" id="inputAddProductName" placeholder="">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddProductSymbol" class="col-sm-4 control-label">Symbol</label>
+                      <div class="col-sm-8">
+                        <input type="text" class="form-control extra-long" id="inputAddProductSymbol" placeholder="">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddProductJiraKey" class="col-sm-4 control-label">JiraKey</label>
+                      <div class="col-sm-8">
+                        <input type="text" class="form-control extra-long" id="inputAddProductJiraKey" placeholder="">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddProductWikiUrl" class="col-sm-4 control-label">WikiUrl</label>
+                      <div class="col-sm-8">
+                        <input type="text" class="form-control extra-long" id="inputAddProductWikiUrl" placeholder="">
+                      </div>
+                    </div>
+                <!-- <div class="form-group">
+                    <label for="inputAddProductCategory" class="col-sm-4 control-label">Category</label>
+                    <div class="col-sm-8">
+                      <select class="form-control extra-long" id="inputAddProductCategory" data-bind="">
+                    </select>
+                  </div>
+                </div> -->
+              </form>
+                </div>
+                <div class="modal-footer">
+                  <span class="yui-secondary-button yui-push-button">
+                    <span class="first-child">
+                      <button type="button" class="" data-dismiss="modal">Close</button>
+                    </span>
+                  </span>
+                  <span id="cow-test-const-html-primary" class="yui-primary-button yui-push-button">
+                    <span class="first-child">
+                      <button type="button" class="">Save changes</button>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end modal addProduct -->
+          </div>
+          <div class="col-md-6">
+            <h3>Product information
+              <span class="yui-primary-button yui-push-button pull-right">
+                <span class="first-child">
+                  <button type="button" class="btn btn-default pull-right" data-toggle="modal" data-target="#editProduct">
+                   <span class="glyphicon glyphicon-pencil"></span> Edit
+                  </button>
+                </span>
+              </span>
+            </h3>
+            <hr>
+            <div class="" id="productInfo" style="text-align: center;">
+              <img class="img-thumbnail" style="margin-top: 10px; margin-bottom: 10px;" data-src="holder.js/64x64" alt="...">
+              <!-- productInformation -->
+              <div class="caption">
+                <table class="table">
+                  <tr>
+                      <th scope="row">Id</th>
+                      <td data-bind="text: selectedProduct().id"></td>
+                  </tr>
+                  <tr>
+                      <th scope="row">Name</th>
+                      <td data-bind="text: selectedProduct().name"></td>
+                  </tr>
+                  <tr>
+                      <th scope="row">Symbol</th>
+                      <td data-bind="text: selectedProduct().symbol"></td>
+                  </tr>
+                  <tr>
+                      <th scope="row">JiraKey</th>
+                      <td data-bind="text: selectedProduct().jiraKey"></td>
+                  </tr>
+                  <tr>
+                      <th scope="row">WikiUrl</th>
+                      <td ><a data-bind="attr: { href : selectedProduct().wikiUrl}">Link</a></td>
+                  </tr>
+                  </table>
+              </div>
+              <!-- end productInformation -->
+            </div>
+            
+          <!-- modal editProduct -->
+          <div class="modal fade" id="editProduct" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <h3 class="modal-title" id="myModalLabel">Modal editProd</h3>
+                </div>
+                <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                <div class="form-group">
+                  <label for="inputEditProductId" class="col-sm-4 control-label">Id</label>
+                  <div class="col-sm-8">
+                    <input type="text" disabled class="form-control extra-long" id="inputEditProductId" placeholder="" data-bind="value: selectedProduct().id">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputEditProductName" class="col-sm-4 control-label">Name</label>
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control extra-long" id="inputEditProductName" placeholder="" data-bind="value: selectedProduct().name">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputEditProductSymbol" class="col-sm-4 control-label">Symbol</label>
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control extra-long" id="inputEditProductSymbol" placeholder="" data-bind="value: selectedProduct().symbol">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputEditProductJiraKey" class="col-sm-4 control-label">JiraKey</label>
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control extra-long" id="inputEditProductJiraKey" placeholder="" data-bind="value: selectedProduct().jiraKey">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputEditProductWikiUrl" class="col-sm-4 control-label">WikiUrl</label>
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control extra-long" id="inputEditProductWikiUrl" placeholder="" data-bind="value: selectedProduct().wikiUrl">
+                  </div>
+                </div>
+              </form>
+                </div>
+                <div class="modal-footer">
+                  <span class="yui-secondary-button yui-push-button">
+                    <span class="first-child">
+                      <button type="button" class="" data-dismiss="modal">Close</button>
+                    </span>
+                  </span>
+                  <span id="cow-test-const-html-primary" class="yui-primary-button yui-push-button">
+                    <span class="first-child">
+                      <button type="button" class="">Save changes</button>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end modal editProduct -->
+          </div>
+        </div>
+    <div class="col-md-6">
+        <h2>Modules
+          <span id="cow-test-const-html-primary" class="yui-primary-button yui-push-button pull-right">
+        <span class="first-child" >
+          <button type="button" class="pull-right" data-toggle="modal" data-target="#addModule">
+            <span class="glyphicon glyphicon-plus"></span> Add
+          </button>
+        </span>
+      </span>
+        </h2>
+        <hr>
+        <div class="col-md-6">
+            <!-- Module Selection -->
+            <ul class="menu" id="menu-modules" data-bind="foreach: selectedProduct().modules" style=" border-width: 1px;">
+              <div data-bind="foreach: $data.modules" >
+                <li style="margin-bottom: 10px; padding-top: 10px; padding-left: 20px">
+                    <a data-bind="text: $data.name, click: $root.selectModule"></a>
+                </li>
+                </div>
+            </ul>
+                  <!-- end ModuleSelection -->
+          <!-- modal addModule -->
+          <div class="modal fade" id="addModule" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <h3 class="modal-title" id="myModalLabel">Modal addModule</h3>
+                </div>
+                <div class="modal-body">
+                  <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                  <label for="inputEditModuleName" class="col-sm-4 control-label">Id</label>
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control extra-long" id="inputAddModuleId" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddModalName" class="col-sm-4 control-label">Name</label>
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control extra-long" id="inputAddModalName" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddModalSymbol" class="col-sm-4 control-label">Symbol</label>
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control extra-long" id="inputAddModalSymbol" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddModalComponent" class="col-sm-4 control-label">JiraComponent</label>
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control extra-long" id="inputAddModalComponent" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddModalComponent" class="col-sm-4 control-label">Generate Package</label>
+                  <div class="col-sm-8">
+                    <label for="check-option1">
+                      <input id="check-option1" type="checkbox">
+                    </label>
+                  </div>
+                </div>
+                
+              </form>
+                </div>
+                <div class="modal-footer">
+                  <span class="yui-secondary-button yui-push-button">
+                    <span class="first-child">
+                      <button type="button" class="" data-dismiss="modal">Close</button>
+                    </span>
+                  </span>
+                  <span id="cow-test-const-html-primary" class="yui-primary-button yui-push-button">
+                    <span class="first-child">
+                      <button type="button" class="">Save changes</button>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end modal addModule -->
+          </div>
+          <div class="col-md-6">
+            <h3>Module information
+              <span class="yui-primary-button yui-push-button pull-right">
+                <span class="first-child">
+                  <button type="button" class="btn btn-default pull-right" data-toggle="modal" data-target="#editModule">
+                   <span class="glyphicon glyphicon-pencil"></span> Edit
+                  </button>
+                </span>
+              </span>
+            </h3>
+            <hr>
+            <!-- module Information -->
+            <div class="" id="moduleInfo" style="text-align: center;">
+              <img class="img-thumbnail" data-src="holder.js/64x64" alt="...">
+              <div class="caption">
+                <table class="table">
+                 <tr>
+                    <th scope="row">Id</th>
+                    <td data-bind="text: selectedModule().id"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Name</th>
+                    <td data-bind="text: selectedModule().name"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Symbol</th>
+                    <td data-bind="text: selectedModule().symbol"></td>
+                </tr>
+                <tr>
+                    <th scope="row">JiraKey</th>
+                    <td data-bind="text: selectedModule().jiraComponent"></td>
+                </tr>
+                 <tr>
+                    <th scope="row">Generate<br>Package</th>
+                    <td data-bind="text: selectedModule().generatePackage"></td>
+                </tr>
+
+              </table>
+              </div>
+            </div>
+            <!-- end module Information -->
+          </button>
+          <!-- modal editModule -->
+          <div class="modal fade" id="editModule" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <h3 class="modal-title" id="myModalLabel">Modal editModule</h3>
+                </div>
+                <div class="modal-body">
+                  <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                  <label for="inputEditModuleName" class="col-sm-4 control-label">Id</label>
+                  <div class="col-sm-8">
+                    <input type="text" disabled class="form-control extra-long" id="inputEditMuleId" placeholder="" data-bind="value: selectedModule().id">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputEditModuleName" class="col-sm-4 control-label">Name</label>
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control extra-long" id="inputEditMuleName" placeholder="" data-bind="value: selectedModule().name">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputEditModuleSymbol" class="col-sm-4 control-label">Symbol</label>
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control extra-long" id="inputEditModuleSymbol" placeholder="" data-bind="value: selectedModule().symbol">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputEditModuleComponent" class="col-sm-4 control-label">JiraComponent</label>
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control extra-long" id="inputEditModuleComponent" placeholder="" data-bind="value: selectedModule().jiraComponent">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputEditModuleComponent" class="col-sm-4 control-label">Generate Package</label>
+                  <div class="col-sm-8">
+                    <label for="check-option1" id="yui_3_17_2_1_1406190930810_174">
+                      <input id="check-option1" type="checkbox" data-bind="checked: selectedModuleGeneratePackage()">
+                    </label>
+                  </div>
+                </div>
+                
+              </form>
+                </div>
+                <div class="modal-footer">
+                  <span class="yui-secondary-button yui-push-button">
+                    <span class="first-child">
+                      <button type="button" class="" data-dismiss="modal">Close</button>
+                    </span>
+                  </span>
+                  <span id="cow-test-const-html-primary" class="yui-primary-button yui-push-button">
+                    <span class="first-child">
+                      <button type="button" class="">Save changes</button>
+                    </span>
+                  </span>
+              </div>
+            </div>
+          </div>
+          <!-- end modal editModule -->
+          </div>
+    </div>
+  </div>
+  </body>
+  <footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/holder.js"></script>
+    <script type="text/javascript" src="js/knockout-3.1.0.js"></script>
+    <script type="text/javascript" src="js/taxonomy.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script data-main="js/main" src="js/require.js"></script>  
+  </footer>
+</html>

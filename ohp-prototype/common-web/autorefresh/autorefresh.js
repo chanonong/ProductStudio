@@ -1,0 +1,11 @@
+/*
+ * Copyright (c) Orchestral Developments Ltd (2001 - 2014).
+ *
+ * This document is copyright. Except for the purpose of fair reviewing, no part
+ * of this publication may be reproduced or transmitted in any form or by any
+ * means, electronic or mechanical, including photocopying, recording, or any
+ * information storage and retrieval system, without permission in writing from
+ * the publisher. Infringers of copyright render themselves liable for
+ * prosecution.
+ */
+YAHOO.namespace("ORCHESTRAL.widget"),function(){var e=YAHOO.lang,t=YAHOO.util.Dom,n=YAHOO.util.Event,r=function(t,i,s,o,u){this._refreshInterval=s,this._updateHandler=o,this._scope=u,r.superclass.constructor.call(this,t),n.on(i,"click",this._registerActivity,null,this),n.on(i,"mousemove",this._registerActivity,null,this),this._refreshTimer=e.later(this._refreshInterval*1e3,this,this._triggerRefresh)};e.extend(r,YAHOO.util.Element,{_paused:!1,_recentActivityTimer:null,_refreshInterval:null,_refreshTimer:null,_scope:null,_updateHandler:null,_registerActivity:function(){this._recentActivityTimer&&this._recentActivityTimer.cancel(),this._recentActivityTimer=e.later(5e3,this,function(){this._recentActivityTimer=null})},_triggerRefresh:function(){this._paused||this._recentActivityTimer?this._refreshTimer=e.later(1e3,this,this._triggerRefresh):this._updateHandler.call(this._scope)},pause:function(){this._paused=!0},unpause:function(){this._paused=!1},updateMessage:function(){if(this.hasChildNodes())this._refreshTimer.cancel();else{this.addClass("label"),this.addClass("last-refreshed");var r=document.createElement("a");r.href="#",t.addClass(r,"refresh-link"),this.appendChild(document.createTextNode("")),this.appendChild(r),n.on(r,"click",function(e){this._updateHandler.call(this._scope),n.preventDefault(e)},null,this)}this.get("element").firstChild.nodeValue=e.substitute(ORCHESTRAL.util.Locale.get("widget.autorefresh.lastRefreshed"),[ORCHESTRAL.util.DateFormat.SHORT_TIME.format(new Date)])+" ",this._refreshTimer=e.later(this._refreshInterval*1e3,this,this._triggerRefresh)}}),ORCHESTRAL.widget.AutoRefresh=r}(),YAHOO.register("orchestral-autorefresh",ORCHESTRAL.widget.AutoRefresh,{version:"7.9",build:"0"});

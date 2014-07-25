@@ -1,0 +1,2305 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/0.10.19/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'tsd',
+1 verbose cli   '-g' ]
+2 info using npm@1.3.11
+3 info using node@v0.10.19
+4 verbose cache add [ 'tsd', null ]
+5 verbose cache add name=undefined spec="tsd" args=["tsd",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'tsd',
+6 verbose parsed url   path: 'tsd',
+6 verbose parsed url   href: 'tsd' }
+7 silly lockFile 6d3ed5a2-tsd tsd
+8 verbose lock tsd /Users/chanon/.npm/6d3ed5a2-tsd.lock
+9 silly lockFile 6d3ed5a2-tsd tsd
+10 silly lockFile 6d3ed5a2-tsd tsd
+11 verbose addNamed [ 'tsd', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile ff70fa42-tsd tsd@
+14 verbose lock tsd@ /Users/chanon/.npm/ff70fa42-tsd.lock
+15 silly addNameRange { name: 'tsd', range: '*', hasData: false }
+16 verbose url raw tsd
+17 verbose url resolving [ 'https://registry.npmjs.org/', './tsd' ]
+18 verbose url resolved https://registry.npmjs.org/tsd
+19 info trying registry request attempt 1 at 16:10:37
+20 verbose etag "38TY7B8NDDSRM0AXBIY77UQKJ"
+21 http GET https://registry.npmjs.org/tsd
+22 http 304 https://registry.npmjs.org/tsd
+23 silly registry.get cb [ 304,
+23 silly registry.get   { date: 'Tue, 22 Jul 2014 09:10:37 GMT',
+23 silly registry.get     server: 'Apache',
+23 silly registry.get     via: '1.1 varnish',
+23 silly registry.get     'last-modified': 'Tue, 22 Jul 2014 09:10:38 GMT',
+23 silly registry.get     'cache-control': 'max-age=60',
+23 silly registry.get     etag: '"38TY7B8NDDSRM0AXBIY77UQKJ"',
+23 silly registry.get     'x-served-by': 'cache-sn87-SIN',
+23 silly registry.get     'x-cache': 'HIT',
+23 silly registry.get     'x-cache-hits': '1',
+23 silly registry.get     'x-timer': 'S1406020237.980859,VS0,VE253',
+23 silly registry.get     vary: 'Accept',
+23 silly registry.get     'content-length': '0',
+23 silly registry.get     'keep-alive': 'timeout=10, max=50',
+23 silly registry.get     connection: 'Keep-Alive' } ]
+24 verbose etag tsd from cache
+25 silly addNameRange number 2 { name: 'tsd', range: '*', hasData: true }
+26 silly addNameRange versions [ 'tsd',
+26 silly addNameRange   [ '0.1.0',
+26 silly addNameRange     '0.1.1',
+26 silly addNameRange     '0.1.2',
+26 silly addNameRange     '0.2.0',
+26 silly addNameRange     '0.2.1',
+26 silly addNameRange     '0.2.2',
+26 silly addNameRange     '0.3.0',
+26 silly addNameRange     '0.3.1',
+26 silly addNameRange     '0.5.2',
+26 silly addNameRange     '0.5.3',
+26 silly addNameRange     '0.5.5',
+26 silly addNameRange     '0.5.6',
+26 silly addNameRange     '0.5.7' ] ]
+27 verbose addNamed [ 'tsd', '0.5.7' ]
+28 verbose addNamed [ '0.5.7', '0.5.7' ]
+29 silly lockFile 310fc726-tsd-0-5-7 tsd@0.5.7
+30 verbose lock tsd@0.5.7 /Users/chanon/.npm/310fc726-tsd-0-5-7.lock
+31 silly lockFile 310fc726-tsd-0-5-7 tsd@0.5.7
+32 silly lockFile 310fc726-tsd-0-5-7 tsd@0.5.7
+33 silly lockFile ff70fa42-tsd tsd@
+34 silly lockFile ff70fa42-tsd tsd@
+35 silly resolved [ { name: 'tsd',
+35 silly resolved     version: '0.5.7',
+35 silly resolved     description: 'TypeScript Definition manager for DefinitelyTyped',
+35 silly resolved     keywords: [ 'typescript', 'definition', 'package', 'manager' ],
+35 silly resolved     homepage: 'https://github.com/DefinitelyTyped/tsd',
+35 silly resolved     repository:
+35 silly resolved      { type: 'git',
+35 silly resolved        url: 'https://github.com/DefinitelyTyped/tsd.git' },
+35 silly resolved     author:
+35 silly resolved      { name: 'Bart van der Schoor',
+35 silly resolved        url: 'https://github.com/Bartvds' },
+35 silly resolved     contributors: [ [Object] ],
+35 silly resolved     licenses: [ [Object] ],
+35 silly resolved     bugs: { url: 'https://github.com/DefinitelyTyped/tsd/issues' },
+35 silly resolved     preferGlobal: true,
+35 silly resolved     engines: { node: '>= 0.10.0 < 0.11.0' },
+35 silly resolved     main: './build/api.js',
+35 silly resolved     bin: { tsd: './build/cli.js' },
+35 silly resolved     scripts: { test: 'grunt test', prepublish: 'grunt pre_publish' },
+35 silly resolved     dependencies:
+35 silly resolved      { q: '~0.9.7',
+35 silly resolved        'q-io': '~1.9.4',
+35 silly resolved        open: '~0.0.4',
+35 silly resolved        exit: '~0.1.1',
+35 silly resolved        mkdirp: '~0.3.5',
+35 silly resolved        semver: '~2.2.1',
+35 silly resolved        tv4: '~1.0.14',
+35 silly resolved        'tv4-reporter': '~0.0.4',
+35 silly resolved        'uri-templates': '0.1.2',
+35 silly resolved        minimist: '0.0.7',
+35 silly resolved        'assertion-error': '1.0.0',
+35 silly resolved        jsesc: '~0.4.3',
+35 silly resolved        'js-yaml': '~3.0.1',
+35 silly resolved        'json-pointer': '~0.1.0',
+35 silly resolved        ministyle: '~0.1.3',
+35 silly resolved        miniwrite: '~0.1.3',
+35 silly resolved        minitable: '~0.0.2',
+35 silly resolved        'es6-shim': '0.9.1',
+35 silly resolved        request: '~2.33.0',
+35 silly resolved        'event-stream': '~3.1.0',
+35 silly resolved        bufferstream: '~0.6.2',
+35 silly resolved        'update-notifier': 'git://github.com/Bartvds/update-notifier/#fix/fork',
+35 silly resolved        'universal-analytics': '~0.3.2',
+35 silly resolved        uuid: '~1.4.1',
+35 silly resolved        'weak-map': '~1.0.3',
+35 silly resolved        'detect-indent': '~0.1.3' },
+35 silly resolved     devDependencies:
+35 silly resolved      { 'source-map-support': '~0.2.5',
+35 silly resolved        grunt: '~0.4.2',
+35 silly resolved        'grunt-cli': '~0.1.11',
+35 silly resolved        'gruntfile-gtx': '~0.2.5',
+35 silly resolved        'grunt-contrib-clean': '~0.5.0',
+35 silly resolved        'grunt-contrib-copy': '~0.4.1',
+35 silly resolved        'grunt-contrib-jshint': '~0.7.2',
+35 silly resolved        'jshint-path-reporter': '~0.1',
+35 silly resolved        typescript: '0.9.7',
+35 silly resolved        'grunt-ts': '~1.7.0',
+35 silly resolved        'grunt-tslint': '~0.4.1',
+35 silly resolved        'tslint-path-formatter': '~0.1.0',
+35 silly resolved        'grunt-tv4': '~0.4.0',
+35 silly resolved        'grunt-shell': '~0.6.1',
+35 silly resolved        'grunt-contrib-connect': '~0.5.0',
+35 silly resolved        'grunt-todos': 'git://github.com/Bartvds/grunt-todos/#master',
+35 silly resolved        'grunt-mocha-test': '~0.8.0',
+35 silly resolved        'mocha-unfunk-reporter': '~0.4.0',
+35 silly resolved        chai: 'git://github.com/Bartvds/chai/#fixes/1.8.x',
+35 silly resolved        'chai-fs': '~0.0.3',
+35 silly resolved        'chai-fuzzy': '~1.4.0',
+35 silly resolved        'chai-json-schema': '~1.0.10',
+35 silly resolved        'chai-as-promised': '~4.1.0',
+35 silly resolved        'buffer-equal': '0.0.0',
+35 silly resolved        ansidiff: '~1.0.0',
+35 silly resolved        'lodash-template': '~1.0.0',
+35 silly resolved        'grunt-webshot': '~0.2.0',
+35 silly resolved        'grunt-regex-replace': '~0.2.5',
+35 silly resolved        'package.json-schema': '~0.2.0' },
+35 silly resolved     readme: '# TSD\n\n[![Build Status](https://secure.travis-ci.org/DefinitelyTyped/tsd.png?branch=master)](http://travis-ci.org/DefinitelyTyped/tsd) [![NPM version](https://badge.fury.io/js/tsd.png)](http://badge.fury.io/js/tsd) [![Dependency Status](https://david-dm.org/DefinitelyTyped/tsd.png)](https://david-dm.org/DefinitelyTyped/tsd) [![devDependency Status](https://david-dm.org/DefinitelyTyped/tsd/dev-status.png)](https://david-dm.org/DefinitelyTyped/tsd#info=devDependencies)\n\n> TypeScript Definition manager for DefinitelyTyped\n\nTSD is a package manager to search and install [TypeScript](http://www.typescriptlang.org/) definition files directly from the community driven [DefinitelyTyped](https://github.com/borisyankov/DefinitelyTyped) repository. \n\n#### Usage notes\n\n*\tIt is recommended you check-in the definitions you install into your VCS.\n*\tDon\'t forget to move your fixes back to [DefinitelyTyped](https://github.com/borisyankov/DefinitelyTyped)\n\n#### Github rate-limit\n\nThe Github API has a 60-requests-per-hour [rate-limit](http://developer.github.com/v3/#rate-limiting) for non-authenticated use. You\'ll likely never hit this as TSD uses local caching and the definition files are downloaded from Github RAW urls. Optionally a scope-limited Github OAuth token can be used to boost the limit to 5000.\n\n#### Usage stats & update-notifier\n\nThe CLI tool [tracks](https://github.com/DefinitelyTyped/tsd/blob/master/src/tsd/cli/tracker.ts) some *anonymous* usage statistics about what definitions are installed though TSD in Google Analytics (using [universal-analytics](https://npmjs.org/package/universal-analytics)). There is also a [update-notifier](https://npmjs.org/package/update-notifier) service to check for TSD updates.\n\n## Install\n\nInstall global using [node](http://nodejs.org/) using [npm](https://npmjs.org/):\n\n````bash\n$ npm install tsd -g\n````\n\nFor previews and history check the [release tags](https://github.com/DefinitelyTyped/tsd/releases).\n\n## Usage as CLI command\n\nGlobal `tsd` binary:\n\n````bash\n$ tsd -h\n````\n\n[![$ tsd -h](https://raw.github.com/DefinitelyTyped/tsd/master/media/capture/help-small.png)](https://raw.github.com/DefinitelyTyped/tsd/master/media/capture/help.png)\n\nSometimes it looks like this:\n\n* [`$ tsd --help`](https://raw.github.com/DefinitelyTyped/tsd/master/media/capture/help.png)\n* [`$ tsd query async --info --history --action install`](https://raw.github.com/DefinitelyTyped/tsd/master/media/capture/async.png)\n* [`$ tsd query angular* --resolve`](https://raw.github.com/DefinitelyTyped/tsd/master/media/capture/angular.png)\n\n### Practical examples\n\nCreate a new `tsd.json`:\n\n````bash\n$ tsd init\n````\n\n#### Search\n\nMinimal query for `d3`:\n\n````bash\n$ tsd query d3\n````\n\nTip: if you are using Linux or Mac OS X, use `$ tsd query "*"`.\n\nGet some info about `jquery`:\n\n````bash\n$ tsd query jquery --info --resolve\n$ tsd query jquery -i -r\n$ tsd query jquery -ir\n````\n\nSearch for `jquery` plugins:\n\n````bash\n$ tsd query */jquery.*\n````\n\nView `mocha` history:\n\n````bash\n$ tsd query mocha --history\n$ tsd query mocha -y\n````\n\nList *everything*:\n\n````bash\n$ tsd query *\n````\n\n#### Open browser\n\nBrowse `pixi` definition on github:\n\n````bash\n$ tsd query pixi --action browse\n$ tsd query pixi -a browse\n````\n\nVisit `gruntjs` homepage:\n\n````bash\n$ tsd query gruntjs --action visit\n$ tsd query gruntjs -a visit\n````\n\n#### Install to project\n\nInstall `mocha`, `chai` and `sinon` definitions all at once:\n\n````bash\n$ tsd query mocha chai sinon --action install\n$ tsd query mocha chai sinon -a install\n````\n\nInstall `bootstrap` definitions:\n\n````bash\n$ tsd query bootstrap --action install\n$ tsd query bootstrap -a install\n````\n\nSolve the reference to `jquery`, overwrite existing files and save to the tsd.config:\n\n````bash\n$ tsd query angular --resolve --overwrite --save --action install\n$ tsd query angular -r -o -s -a install\n$ tsd query angular -rosa install\n````\nInstall and save to `test.d.ts` as `<reference/>` bundle:\n\n````bash\n$ tsd query mocha chai -r -o -s -a install -b test\n````\n\n## Query\n\nTSD uses a (globbing) path + filename selector to query the [DefinitelyTyped index](https://github.com/borisyankov/DefinitelyTyped). The results can then be modified using various filters:\n\nNote how the definition filename takes priority:\n\n````bash\n$ tsd query module\n$ tsd query project/module\n````\n\n\nFor example, consider these definitions:\n\n````\nproject/module.d.ts\nproject/module-0.1.2.d.ts\nproject/module-addon.d.ts\n\nproject-plugin/plugin.d.ts\n\nother/module.d.ts\nother/plugin.d.ts\n````\n\nNotice the pattern, and ignore the `.d.ts` extension:\n\n````html\n<project>/<module><semver>.d.ts\t\n````\n\nSelect definitions using only the module name:\n\n````bash\n$ tsd query module\n$ tsd query module-addon\n````\n\nOr use a selector derived from the path format:\n\n````bash\n$ tsd query project/module\n$ tsd query other/module\n````\n\n### Globbing filter\n\nThe selector also supports globbing, for example:\n\n````bash\n$ tsd query project/*\n$ tsd query project*\n$ tsd query module*\n$ tsd query project/module*\n$ tsd query project-*/plugin*\n$ tsd query *project*/*\n$ tsd query project/plugin*\n$ tsd query other/module\n$ tsd query */module\n$ tsd query */module-*\n$ tsd query */*plugin\n````\n\nGlobbing implements only leading and trailing (for now).\n\n### Semver filter\n\nNote: the [semver](https://github.com/isaacs/node-semver) postfix of definition files is expected to be separated by a dash and possibly a `\'v\'`\n\n````\nmodule-0.1.2\nmodule-v0.1.2\nmodule-v0.1.2-alpha\n````\n\nIf there are multiple matches with same module name they will be prioritised:\n\n1.\tThe unversioned name is considered being most recent.\n2.\tThen versions are compared as expected following these [comparison](https://github.com/isaacs/node-semver#comparison) rules.\n3.\tUse the `--version` / `-v` option to set a semver-range:\n\n````bash\n$ tsd query node -v latest\n$ tsd query node -v all\n$ tsd query node -v ">=0.8 <0.10"\n$ tsd query node -v "<0.10"\n````\n\n### Date filter\n\nUse the `--date` / `-d` option to set a date-range (find dates using `--history` / `-y`):\n\n````bash\n$ tsd query d3 --history\n$ tsd query d3 --date ">=2012-01-01"\n\n$ tsd query d3 -y\n$ tsd query d3 -d "<2012-01-01"\n````\n\n### Commit filter\n\nUse the `--commit` / `-c` option to supply sha1-hash of a commit (find a commit hash using `--history`), for convenience a shortened sha1 hash is supported. \n\n````bash\n$ tsd query youtube --history\n$ tsd query youtube --date d6ff\n\n$ tsd query youtube -y\n$ tsd query youtube -c d6ff\n````\n\nNotes:\n\n1. For now this only works with commits that actually changed the definition file you selected (eg, listed in `--history`) This will be expanded to allow selecting from any commit at a later date.\n\n## Usage as module\n \nTSD can be used as a JavaScript npm dependency: \n\n````js\nvar tsd = require(\'tsd\');\nvar api = new tsd.API(new tsd.Context(\'path/to/tsd-config.json\'));\napi.search(new tsd.Selector(\'jquery/*\')).then(function(res) {\n\t// yes\n\tutil.inspect(res);\n\n}, function(err) {\n\t// no\n});\n````\n\nFor a practical example see [grunt-tsd](https://github.com/DefinitelyTyped/grunt-tsd).\n\nTSD uses Promise/A+ by [kriskowal/q](https://github.com/kriskowal/q) and [kriskowal/q-io](https://github.com/kriskowal/q-io) packages. :point_left::+1: \n\nNote: Keep in mind this project started as a `<reference>` style TypeScript `v0.8.x` single-file compile target, which makes it harder to limit the exported API compared to `import` multi-file style. This is also why the definitions include more then just the `tsd` namespace. \n\nAPI export is somewhat experimental; take care to lock versions and test on upgrade. If you plan to use TSD as module in a tool or project then feel free to [leave a message](https://github.com/DefinitelyTyped/tsd/issues) and coordinate stuff.\n\n### API docs \n\nNot yet. \n\n## Special files\n\n### tsd.json\n\nThe `tsd.json` file is automatically created in the root of each project: it configures TSD and it tracks the definitions that are installed (using `--save`). See the [JSON Schema](https://github.com/DefinitelyTyped/tsd/tree/master/schema) for more info.\n\n### tsd.d.ts\n\nThe `tsd.d.ts` file links every definition that is installed (with `--save`) for convenient reference:\n\n````\n/// <reference path="../typings/tsd.d.ts" />\n```` \n\nBy default it is created in the typings folder but it is configurable in `tsd.json`. TSD will check the existing references and respects re-ordering.\n\n### .tsdrc\n\nThis is a optional JSON encoded file to define global settings. TSD looks for it in the  user\'s home director (eg: `%USERPROFILE%` on Windows, `$HOME` / `~` on Linux), and in the current working directory.\n\n- "**proxy**" - Use a http `proxy`\n\nAny standard http-proxy as supported by the [request](https://github.com/mikeal/request) package.\n\n````json\n{\n\t"proxy": "http://proxy.example.com:88"\n}\n````\n\n- "**token**" - Github OAuth token:\n\nThe OAuth token can be used to boost the Github API rate-limit from 60 to 5000 (non-cached) requests per hour. The is token needs just [\'read-only access to public information\'](http://developer.github.com/v3/oauth/#scopes) so no additional OAuth scopes are necessary.\n\n````json\n{\n\t"token": "0beec7b5ea3f0fdbc95d0dd47f3c5bc275da8a33"\n}\n````\n\nYou can create this token on Github.com:\n\n1. Go to https://github.com/settings/tokens/new\n3. *Deselect* all scopes to create a token with just basic authentication.\n\t1. (verify you *really* deselected all scopes) \n\t5. (wonder why these presets were set??)\n2. Enter a identifying name, something like "`TSD Turbo 5000`"\n5. Create the token.\n6. Copy the hex-string to the `token` element in the `.tsdrc` file.\n6. Verify enhanced rate-limit using `$ tsd rate`\n\nChange or revoke the token at any time on https://github.com/settings/applications\n\nNote: keep in mind the `.tsdrc` file is *not* secured. Don\'t use a token with additional scope unless you know what you are doing. \n\nThe bare \'no scope\' token is *relatively* harmless as it gives \'read-only access to public information\', same as any non-autenticated access. But it does *identify* any requests done with it as being *yours*, so it is still *your* responsibility to keep the token private.\n\n## FAQ & Info\n\n### Is there a grunt task available?\n\nOf course! The official plugin is [grunt-tsd](https://github.com/DefinitelyTyped/grunt-tsd).\n\n### I hit the rate-limit: now what?\n\nIf TSD is used in a way that needs many unique API calls in a short period (like using `--history` on big selections), or shares an internet-connection with multiple users (like in an office) then the rate limit blocks the API. It blocks for 60 minutes after the *first* request of the total 60.\n\nFor these cases TSD has an option to use a Github OAuth token and raise your local rate-limit from 60 to 5000 per hour. See the `.tsdrc`-section elsewhere in the readme.\n\n### Does TSD work behind a (corporate) http proxy?\n\nAs of `v0.5.7` there are two ways to configure the location of the proxy server:\n\n1. Use a environment variable. TSD support the conventional fields: pick one of `HTTPS_PROXY`, `https_proxy`, `HTTP_PROXY` or `http_proxy`.\n1. Use a global `.tsdrc` file and set a `proxy` value (see the tsdrc-section elsewhere in the readme).\n\n### Why does the install / search command not work like in TSD 0.3.0?\n\nThe old TSD `v0.3.0` had it\'s own repository data file that mapped module names to url\'s of definition files. This had a few downsides for (maintenance being one). Since `v0.5.0` we link directly to [DefinitelyTyped](https://github.com/borisyankov/DefinitelyTyped) where the directory and file names are a reasonable indicator but not 100% identical to the names as you\'d find them in npm, bower or other package managers.\n\nThe DefinitelyTyped [group](https://github.com/DefinitelyTyped/tsd/issues) is working on a meta-data source that will solve this.\n\n### Can TSD auto-install definitions for a specific package version?\n\nYes, and no (and later yes again)\n\nThere is basic support for parsing semver-postfixes from the definition file names, and you can filter on this using [semver](https://github.com/isaacs/node-semver) ranges with the `--version` option: Try it with the \'node\' definitions.\n\nIt works well but is not used much in the current DefinitelyTyped repository. The DefinitelyTyped [group](https://github.com/DefinitelyTyped/tsd/issues) is working on a meta-data source that will solve this (the [Nuget exporter](https://github.com/DefinitelyTyped/NugetAutomation) is waiting for this too).\n\n### What is the location of the cache folders?\n\nThe cache is stored in the users home directory (like `$ npm`). Use `$ tsd settings` to view the current paths. Use the `--cacheDir` to override the cache directory, or `--cacheMode` to modify caching behaviour. \n\n### I have a suggestion or contribution\n\nFeel free to leave a [ticket](https://github.com/DefinitelyTyped/tsd/issues). Questions and contributions for the definition files go [here](https://github.com/borisyankov/DefinitelyTyped/issues).\n\n## History\n\n### v0.5.x ( > 2013-08)\n\nSee the [release tags](https://github.com/DefinitelyTyped/tsd/releases) fore more details.\n\n* `0.5.x` - `current` - Full rewrite by @[Bartvds](https://github.com/Bartvds): drops the separated TSD data registry in favour of using the [Github API](http://developer.github.com/) to pull definitions directly from [DefinitelyTyped](https://github.com/borisyankov/DefinitelyTyped).\n\n### v0.3.x\n\n* Original version by @[Diullei](https://github.com/Diullei).\n\nTo install `v0.3.x` (old readme [here](https://github.com/DefinitelyTyped/tsd/blob/legacy/README.md)):\n\n````bash\n$ npm install tsd@0.3.0 -g\n````\n\n## Notable modules\n\nSome essential modules used to build TSD:\n\n* [es6-shim](https://github.com/paulmillr/es6-shim) & [weak-map](https://github.com/drses/weak-map) - Map, Sets and some usefull things.\n* [grunt-ts](https://github.com/basarat/grunt-ts) - TypeScript compiler for grunt.\n* [tslint](https://github.com/palantir/tslint) + [grunt-tslint](https://github.com/palantir/grunt-tslint) - TypeScript linter (contribute some rules!)\n* [gruntfile-gtx](https://github.com/Bartvds/gruntfile-gtx) - Gruntfile powerbooster (by author).\n* [tv4](https://github.com/geraintluff/tv4) - JSON-Schema validation like a boss.\n* [q](https://github.com/kriskowal/q) and [q-io](https://github.com/kriskowal/q-io) - Promises as promised.\n* [semver](https://github.com/isaacs/node-semver) - Semver parsing and filtering\n\n## Build\n\nTSD is build with [TypeScript](http://www.typescriptlang.org/) `v0.9.7` and managed using [Grunt](http://www.gruntjs.com).\n\nTo rebuild clone or fork the repos:\n\nInstall dependencies\n\n````bash\n$ npm install\n````\n\nBuild, lint and test\n\n````bash\n$ grunt test\n````\n\nOnly rebuild (and run cli)\n\n````bash\n$ grunt build\n````\n\nEither install global or use in dev folder:\n\nRun in dev folder\n\n````bash\n$ node ./build/cli.js query d3 --dev\n````\n\nInstall to global cli\n\n````bash\n$ npm install . -g\n````\n\nTSD uses [gruntfile-gtx](https://github.com/Bartvds/gruntfile-gtx) to test separate test suites sets during development:\n\nList aliases\n\n````bash\n$ grunt -h\n````\n\nExample: run only api tests\n\n````bash\n$ grunt gtx:api\n$ grunt gtx:cli\n$ grunt gtx:tsd\n````\n\nIt is recommend you use an intelligent parsing IDE (WebStorm or VisualStudio) and a big screen (or two) on a properly powerful workstation.\n\nCode looks best with tabs rendered at 4 spaces (3 is nice too, or 6 or 8.. I don\'t really care, because [smart-tabs](http://www.emacswiki.org/SmartTabs) are awesome like that). The gruntfile uses slightly harsh [JSHint](https://github.com/jshint/jshint) and [TSLint](https://github.com/palantir/tslint) settings to enforce code style, but there is an [`.editorconfig`](http://editorconfig.org/) to elevate some of the pain.\n\n## Contribute\n\nContributions are very welcome; please discuss larger changes in a [ticket](https://github.com/DefinitelyTyped/tsd/issues) first. Fixes and simple enhancements are always much appreciated. \n\n**Note:** Contributions on the definition files go directly to [DefinitelyTyped](https://github.com/borisyankov/DefinitelyTyped).\n\n## Privacy statement\n\nThe TSD CLI tool collects definition usage information, like the queries made to the repo and the definitions that get installed. The information collected amounts to about same level of detail as services like npm or github would collect (maybe even less as we don\'t track a user id). \n\nThe API does not track anything. \n\nTo store this TSD uses [Google Analytics](http://www.google.com/analytics/) in the excellent [universal-analytics](https://npmjs.org/package/universal-analytics) package. We might at some point publish some anonymised aggregate stats to the DefinitelyTyped website.\n\nThe optional [Github OAuth token](http://developer.github.com/v3/oauth/) is only used to authenticate with the Github API. The token is not stored anywhere but the local machine. It is your responsibility to keep your token safe. \n\nUsing an OAuth token with additional scope is *not advised nor supported* (even though it could make TSD work with private repositories). But it might also leak repo or content names to analytics or leave a bare http cache in your temp dir. If this bothers you please review the license and/or leave a message.\n\nChanges to the policy should be announced in release notes, and ideally ask confirmation on the first CLI use.\n\n## License\n\nCopyright (c) 2013 by [Bart van der Schoor](https://github.com/Bartvds).\n\nLicensed under the [Apache License, Version 2.0](https://raw.github.com/DefinitelyTyped/tsd/master/LICENSE.txt). \n\n* note: there is some imported MIT licensed code by myself, [Bart van der Schoor](https://github.com/Bartvds)\n\nCopyright (c) 2012 by [Diullei Gomes](https://github.com/Diullei).\n\nLicensed under the MIT License. \n\n[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/DefinitelyTyped/tsd/trend.png)](https://bitdeli.com/free "Bitdeli Badge")\n',
+35 silly resolved     readmeFilename: 'README.md',
+35 silly resolved     _id: 'tsd@0.5.7',
+35 silly resolved     _from: 'tsd@' } ]
+36 info install tsd@0.5.7 into /usr/local/lib
+37 info installOne tsd@0.5.7
+38 info /usr/local/lib/node_modules/tsd unbuild
+39 verbose tar unpack /Users/chanon/.npm/tsd/0.5.7/package.tgz
+40 silly lockFile cd6bb0f7-r-usr-local-lib-node-modules-tsd tar:///usr/local/lib/node_modules/tsd
+41 verbose lock tar:///usr/local/lib/node_modules/tsd /Users/chanon/.npm/cd6bb0f7-r-usr-local-lib-node-modules-tsd.lock
+42 silly lockFile e5fb0e0e-chanon-npm-tsd-0-5-7-package-tgz tar:///Users/chanon/.npm/tsd/0.5.7/package.tgz
+43 verbose lock tar:///Users/chanon/.npm/tsd/0.5.7/package.tgz /Users/chanon/.npm/e5fb0e0e-chanon-npm-tsd-0-5-7-package-tgz.lock
+44 silly gunzTarPerm modes [ '755', '644' ]
+45 silly gunzTarPerm extractEntry package.json
+46 silly gunzTarPerm extractEntry README.md
+47 silly gunzTarPerm extractEntry build/api.js
+48 silly gunzTarPerm extractEntry build/cli.js
+49 silly gunzTarPerm extractEntry build/.gitattributes
+50 silly gunzTarPerm extractEntry build/api.d.ts
+51 silly gunzTarPerm extractEntry conf/settings.json
+52 silly gunzTarPerm extractEntry schema/cache-v1.json
+53 silly gunzTarPerm extractEntry schema/manage-v1.json
+54 silly gunzTarPerm extractEntry schema/tsd-v4.json
+55 silly lockFile cd6bb0f7-r-usr-local-lib-node-modules-tsd tar:///usr/local/lib/node_modules/tsd
+56 silly lockFile cd6bb0f7-r-usr-local-lib-node-modules-tsd tar:///usr/local/lib/node_modules/tsd
+57 silly lockFile e5fb0e0e-chanon-npm-tsd-0-5-7-package-tgz tar:///Users/chanon/.npm/tsd/0.5.7/package.tgz
+58 silly lockFile e5fb0e0e-chanon-npm-tsd-0-5-7-package-tgz tar:///Users/chanon/.npm/tsd/0.5.7/package.tgz
+59 info preinstall tsd@0.5.7
+60 verbose readDependencies using package.json deps
+61 verbose readDependencies using package.json deps
+62 verbose cache add [ 'q-io@~1.9.4', null ]
+63 verbose cache add name=undefined spec="q-io@~1.9.4" args=["q-io@~1.9.4",null]
+64 verbose parsed url { protocol: null,
+64 verbose parsed url   slashes: null,
+64 verbose parsed url   auth: null,
+64 verbose parsed url   host: null,
+64 verbose parsed url   port: null,
+64 verbose parsed url   hostname: null,
+64 verbose parsed url   hash: null,
+64 verbose parsed url   search: null,
+64 verbose parsed url   query: null,
+64 verbose parsed url   pathname: 'q-io@~1.9.4',
+64 verbose parsed url   path: 'q-io@~1.9.4',
+64 verbose parsed url   href: 'q-io@~1.9.4' }
+65 verbose cache add name="q-io" spec="~1.9.4" args=["q-io","~1.9.4"]
+66 verbose parsed url { protocol: null,
+66 verbose parsed url   slashes: null,
+66 verbose parsed url   auth: null,
+66 verbose parsed url   host: null,
+66 verbose parsed url   port: null,
+66 verbose parsed url   hostname: null,
+66 verbose parsed url   hash: null,
+66 verbose parsed url   search: null,
+66 verbose parsed url   query: null,
+66 verbose parsed url   pathname: '~1.9.4',
+66 verbose parsed url   path: '~1.9.4',
+66 verbose parsed url   href: '~1.9.4' }
+67 verbose addNamed [ 'q-io', '~1.9.4' ]
+68 verbose addNamed [ null, '>=1.9.4-0 <1.10.0-0' ]
+69 silly lockFile d232105b-q-io-1-9-4 q-io@~1.9.4
+70 verbose lock q-io@~1.9.4 /Users/chanon/.npm/d232105b-q-io-1-9-4.lock
+71 verbose cache add [ 'exit@~0.1.1', null ]
+72 verbose cache add name=undefined spec="exit@~0.1.1" args=["exit@~0.1.1",null]
+73 verbose parsed url { protocol: null,
+73 verbose parsed url   slashes: null,
+73 verbose parsed url   auth: null,
+73 verbose parsed url   host: null,
+73 verbose parsed url   port: null,
+73 verbose parsed url   hostname: null,
+73 verbose parsed url   hash: null,
+73 verbose parsed url   search: null,
+73 verbose parsed url   query: null,
+73 verbose parsed url   pathname: 'exit@~0.1.1',
+73 verbose parsed url   path: 'exit@~0.1.1',
+73 verbose parsed url   href: 'exit@~0.1.1' }
+74 verbose cache add name="exit" spec="~0.1.1" args=["exit","~0.1.1"]
+75 verbose parsed url { protocol: null,
+75 verbose parsed url   slashes: null,
+75 verbose parsed url   auth: null,
+75 verbose parsed url   host: null,
+75 verbose parsed url   port: null,
+75 verbose parsed url   hostname: null,
+75 verbose parsed url   hash: null,
+75 verbose parsed url   search: null,
+75 verbose parsed url   query: null,
+75 verbose parsed url   pathname: '~0.1.1',
+75 verbose parsed url   path: '~0.1.1',
+75 verbose parsed url   href: '~0.1.1' }
+76 verbose addNamed [ 'exit', '~0.1.1' ]
+77 verbose addNamed [ null, '>=0.1.1-0 <0.2.0-0' ]
+78 silly lockFile 36e7f3d8-exit-0-1-1 exit@~0.1.1
+79 verbose lock exit@~0.1.1 /Users/chanon/.npm/36e7f3d8-exit-0-1-1.lock
+80 verbose cache add [ 'open@~0.0.4', null ]
+81 verbose cache add name=undefined spec="open@~0.0.4" args=["open@~0.0.4",null]
+82 verbose parsed url { protocol: null,
+82 verbose parsed url   slashes: null,
+82 verbose parsed url   auth: null,
+82 verbose parsed url   host: null,
+82 verbose parsed url   port: null,
+82 verbose parsed url   hostname: null,
+82 verbose parsed url   hash: null,
+82 verbose parsed url   search: null,
+82 verbose parsed url   query: null,
+82 verbose parsed url   pathname: 'open@~0.0.4',
+82 verbose parsed url   path: 'open@~0.0.4',
+82 verbose parsed url   href: 'open@~0.0.4' }
+83 verbose cache add name="open" spec="~0.0.4" args=["open","~0.0.4"]
+84 verbose parsed url { protocol: null,
+84 verbose parsed url   slashes: null,
+84 verbose parsed url   auth: null,
+84 verbose parsed url   host: null,
+84 verbose parsed url   port: null,
+84 verbose parsed url   hostname: null,
+84 verbose parsed url   hash: null,
+84 verbose parsed url   search: null,
+84 verbose parsed url   query: null,
+84 verbose parsed url   pathname: '~0.0.4',
+84 verbose parsed url   path: '~0.0.4',
+84 verbose parsed url   href: '~0.0.4' }
+85 verbose addNamed [ 'open', '~0.0.4' ]
+86 verbose addNamed [ null, '>=0.0.4-0 <0.1.0-0' ]
+87 silly lockFile 93cadc2e-open-0-0-4 open@~0.0.4
+88 verbose lock open@~0.0.4 /Users/chanon/.npm/93cadc2e-open-0-0-4.lock
+89 verbose cache add [ 'mkdirp@~0.3.5', null ]
+90 verbose cache add name=undefined spec="mkdirp@~0.3.5" args=["mkdirp@~0.3.5",null]
+91 verbose parsed url { protocol: null,
+91 verbose parsed url   slashes: null,
+91 verbose parsed url   auth: null,
+91 verbose parsed url   host: null,
+91 verbose parsed url   port: null,
+91 verbose parsed url   hostname: null,
+91 verbose parsed url   hash: null,
+91 verbose parsed url   search: null,
+91 verbose parsed url   query: null,
+91 verbose parsed url   pathname: 'mkdirp@~0.3.5',
+91 verbose parsed url   path: 'mkdirp@~0.3.5',
+91 verbose parsed url   href: 'mkdirp@~0.3.5' }
+92 verbose cache add name="mkdirp" spec="~0.3.5" args=["mkdirp","~0.3.5"]
+93 verbose parsed url { protocol: null,
+93 verbose parsed url   slashes: null,
+93 verbose parsed url   auth: null,
+93 verbose parsed url   host: null,
+93 verbose parsed url   port: null,
+93 verbose parsed url   hostname: null,
+93 verbose parsed url   hash: null,
+93 verbose parsed url   search: null,
+93 verbose parsed url   query: null,
+93 verbose parsed url   pathname: '~0.3.5',
+93 verbose parsed url   path: '~0.3.5',
+93 verbose parsed url   href: '~0.3.5' }
+94 verbose addNamed [ 'mkdirp', '~0.3.5' ]
+95 verbose addNamed [ null, '>=0.3.5-0 <0.4.0-0' ]
+96 silly lockFile c3f0fe9b-mkdirp-0-3-5 mkdirp@~0.3.5
+97 verbose lock mkdirp@~0.3.5 /Users/chanon/.npm/c3f0fe9b-mkdirp-0-3-5.lock
+98 verbose cache add [ 'semver@~2.2.1', null ]
+99 verbose cache add name=undefined spec="semver@~2.2.1" args=["semver@~2.2.1",null]
+100 verbose parsed url { protocol: null,
+100 verbose parsed url   slashes: null,
+100 verbose parsed url   auth: null,
+100 verbose parsed url   host: null,
+100 verbose parsed url   port: null,
+100 verbose parsed url   hostname: null,
+100 verbose parsed url   hash: null,
+100 verbose parsed url   search: null,
+100 verbose parsed url   query: null,
+100 verbose parsed url   pathname: 'semver@~2.2.1',
+100 verbose parsed url   path: 'semver@~2.2.1',
+100 verbose parsed url   href: 'semver@~2.2.1' }
+101 verbose cache add name="semver" spec="~2.2.1" args=["semver","~2.2.1"]
+102 verbose parsed url { protocol: null,
+102 verbose parsed url   slashes: null,
+102 verbose parsed url   auth: null,
+102 verbose parsed url   host: null,
+102 verbose parsed url   port: null,
+102 verbose parsed url   hostname: null,
+102 verbose parsed url   hash: null,
+102 verbose parsed url   search: null,
+102 verbose parsed url   query: null,
+102 verbose parsed url   pathname: '~2.2.1',
+102 verbose parsed url   path: '~2.2.1',
+102 verbose parsed url   href: '~2.2.1' }
+103 verbose addNamed [ 'semver', '~2.2.1' ]
+104 verbose addNamed [ null, '>=2.2.1-0 <2.3.0-0' ]
+105 silly lockFile 1708eccd-semver-2-2-1 semver@~2.2.1
+106 verbose lock semver@~2.2.1 /Users/chanon/.npm/1708eccd-semver-2-2-1.lock
+107 verbose cache add [ 'tv4@~1.0.14', null ]
+108 verbose cache add name=undefined spec="tv4@~1.0.14" args=["tv4@~1.0.14",null]
+109 verbose parsed url { protocol: null,
+109 verbose parsed url   slashes: null,
+109 verbose parsed url   auth: null,
+109 verbose parsed url   host: null,
+109 verbose parsed url   port: null,
+109 verbose parsed url   hostname: null,
+109 verbose parsed url   hash: null,
+109 verbose parsed url   search: null,
+109 verbose parsed url   query: null,
+109 verbose parsed url   pathname: 'tv4@~1.0.14',
+109 verbose parsed url   path: 'tv4@~1.0.14',
+109 verbose parsed url   href: 'tv4@~1.0.14' }
+110 verbose cache add name="tv4" spec="~1.0.14" args=["tv4","~1.0.14"]
+111 verbose parsed url { protocol: null,
+111 verbose parsed url   slashes: null,
+111 verbose parsed url   auth: null,
+111 verbose parsed url   host: null,
+111 verbose parsed url   port: null,
+111 verbose parsed url   hostname: null,
+111 verbose parsed url   hash: null,
+111 verbose parsed url   search: null,
+111 verbose parsed url   query: null,
+111 verbose parsed url   pathname: '~1.0.14',
+111 verbose parsed url   path: '~1.0.14',
+111 verbose parsed url   href: '~1.0.14' }
+112 verbose addNamed [ 'tv4', '~1.0.14' ]
+113 verbose addNamed [ null, '>=1.0.14-0 <1.1.0-0' ]
+114 silly lockFile 37121859-tv4-1-0-14 tv4@~1.0.14
+115 verbose lock tv4@~1.0.14 /Users/chanon/.npm/37121859-tv4-1-0-14.lock
+116 verbose cache add [ 'tv4-reporter@~0.0.4', null ]
+117 verbose cache add name=undefined spec="tv4-reporter@~0.0.4" args=["tv4-reporter@~0.0.4",null]
+118 verbose parsed url { protocol: null,
+118 verbose parsed url   slashes: null,
+118 verbose parsed url   auth: null,
+118 verbose parsed url   host: null,
+118 verbose parsed url   port: null,
+118 verbose parsed url   hostname: null,
+118 verbose parsed url   hash: null,
+118 verbose parsed url   search: null,
+118 verbose parsed url   query: null,
+118 verbose parsed url   pathname: 'tv4-reporter@~0.0.4',
+118 verbose parsed url   path: 'tv4-reporter@~0.0.4',
+118 verbose parsed url   href: 'tv4-reporter@~0.0.4' }
+119 verbose cache add name="tv4-reporter" spec="~0.0.4" args=["tv4-reporter","~0.0.4"]
+120 verbose parsed url { protocol: null,
+120 verbose parsed url   slashes: null,
+120 verbose parsed url   auth: null,
+120 verbose parsed url   host: null,
+120 verbose parsed url   port: null,
+120 verbose parsed url   hostname: null,
+120 verbose parsed url   hash: null,
+120 verbose parsed url   search: null,
+120 verbose parsed url   query: null,
+120 verbose parsed url   pathname: '~0.0.4',
+120 verbose parsed url   path: '~0.0.4',
+120 verbose parsed url   href: '~0.0.4' }
+121 verbose addNamed [ 'tv4-reporter', '~0.0.4' ]
+122 verbose addNamed [ null, '>=0.0.4-0 <0.1.0-0' ]
+123 silly lockFile b6645691-tv4-reporter-0-0-4 tv4-reporter@~0.0.4
+124 verbose lock tv4-reporter@~0.0.4 /Users/chanon/.npm/b6645691-tv4-reporter-0-0-4.lock
+125 silly addNameRange { name: 'q-io', range: '>=1.9.4-0 <1.10.0-0', hasData: false }
+126 silly addNameRange { name: 'exit', range: '>=0.1.1-0 <0.2.0-0', hasData: false }
+127 silly addNameRange { name: 'open', range: '>=0.0.4-0 <0.1.0-0', hasData: false }
+128 verbose cache add [ 'uri-templates@0.1.2', null ]
+129 verbose cache add name=undefined spec="uri-templates@0.1.2" args=["uri-templates@0.1.2",null]
+130 verbose parsed url { protocol: null,
+130 verbose parsed url   slashes: null,
+130 verbose parsed url   auth: null,
+130 verbose parsed url   host: null,
+130 verbose parsed url   port: null,
+130 verbose parsed url   hostname: null,
+130 verbose parsed url   hash: null,
+130 verbose parsed url   search: null,
+130 verbose parsed url   query: null,
+130 verbose parsed url   pathname: 'uri-templates@0.1.2',
+130 verbose parsed url   path: 'uri-templates@0.1.2',
+130 verbose parsed url   href: 'uri-templates@0.1.2' }
+131 verbose cache add name="uri-templates" spec="0.1.2" args=["uri-templates","0.1.2"]
+132 verbose parsed url { protocol: null,
+132 verbose parsed url   slashes: null,
+132 verbose parsed url   auth: null,
+132 verbose parsed url   host: null,
+132 verbose parsed url   port: null,
+132 verbose parsed url   hostname: null,
+132 verbose parsed url   hash: null,
+132 verbose parsed url   search: null,
+132 verbose parsed url   query: null,
+132 verbose parsed url   pathname: '0.1.2',
+132 verbose parsed url   path: '0.1.2',
+132 verbose parsed url   href: '0.1.2' }
+133 verbose addNamed [ 'uri-templates', '0.1.2' ]
+134 verbose addNamed [ '0.1.2', '0.1.2' ]
+135 silly lockFile 8f810378-uri-templates-0-1-2 uri-templates@0.1.2
+136 verbose lock uri-templates@0.1.2 /Users/chanon/.npm/8f810378-uri-templates-0-1-2.lock
+137 verbose cache add [ 'minimist@0.0.7', null ]
+138 verbose cache add name=undefined spec="minimist@0.0.7" args=["minimist@0.0.7",null]
+139 verbose parsed url { protocol: null,
+139 verbose parsed url   slashes: null,
+139 verbose parsed url   auth: null,
+139 verbose parsed url   host: null,
+139 verbose parsed url   port: null,
+139 verbose parsed url   hostname: null,
+139 verbose parsed url   hash: null,
+139 verbose parsed url   search: null,
+139 verbose parsed url   query: null,
+139 verbose parsed url   pathname: 'minimist@0.0.7',
+139 verbose parsed url   path: 'minimist@0.0.7',
+139 verbose parsed url   href: 'minimist@0.0.7' }
+140 verbose cache add name="minimist" spec="0.0.7" args=["minimist","0.0.7"]
+141 verbose parsed url { protocol: null,
+141 verbose parsed url   slashes: null,
+141 verbose parsed url   auth: null,
+141 verbose parsed url   host: null,
+141 verbose parsed url   port: null,
+141 verbose parsed url   hostname: null,
+141 verbose parsed url   hash: null,
+141 verbose parsed url   search: null,
+141 verbose parsed url   query: null,
+141 verbose parsed url   pathname: '0.0.7',
+141 verbose parsed url   path: '0.0.7',
+141 verbose parsed url   href: '0.0.7' }
+142 verbose addNamed [ 'minimist', '0.0.7' ]
+143 verbose addNamed [ '0.0.7', '0.0.7' ]
+144 silly lockFile 02a0b287-minimist-0-0-7 minimist@0.0.7
+145 verbose lock minimist@0.0.7 /Users/chanon/.npm/02a0b287-minimist-0-0-7.lock
+146 verbose cache add [ 'assertion-error@1.0.0', null ]
+147 verbose cache add name=undefined spec="assertion-error@1.0.0" args=["assertion-error@1.0.0",null]
+148 verbose parsed url { protocol: null,
+148 verbose parsed url   slashes: null,
+148 verbose parsed url   auth: null,
+148 verbose parsed url   host: null,
+148 verbose parsed url   port: null,
+148 verbose parsed url   hostname: null,
+148 verbose parsed url   hash: null,
+148 verbose parsed url   search: null,
+148 verbose parsed url   query: null,
+148 verbose parsed url   pathname: 'assertion-error@1.0.0',
+148 verbose parsed url   path: 'assertion-error@1.0.0',
+148 verbose parsed url   href: 'assertion-error@1.0.0' }
+149 verbose cache add name="assertion-error" spec="1.0.0" args=["assertion-error","1.0.0"]
+150 verbose parsed url { protocol: null,
+150 verbose parsed url   slashes: null,
+150 verbose parsed url   auth: null,
+150 verbose parsed url   host: null,
+150 verbose parsed url   port: null,
+150 verbose parsed url   hostname: null,
+150 verbose parsed url   hash: null,
+150 verbose parsed url   search: null,
+150 verbose parsed url   query: null,
+150 verbose parsed url   pathname: '1.0.0',
+150 verbose parsed url   path: '1.0.0',
+150 verbose parsed url   href: '1.0.0' }
+151 verbose addNamed [ 'assertion-error', '1.0.0' ]
+152 verbose addNamed [ '1.0.0', '1.0.0' ]
+153 silly lockFile f5d03964-assertion-error-1-0-0 assertion-error@1.0.0
+154 verbose lock assertion-error@1.0.0 /Users/chanon/.npm/f5d03964-assertion-error-1-0-0.lock
+155 verbose cache add [ 'jsesc@~0.4.3', null ]
+156 verbose cache add name=undefined spec="jsesc@~0.4.3" args=["jsesc@~0.4.3",null]
+157 verbose parsed url { protocol: null,
+157 verbose parsed url   slashes: null,
+157 verbose parsed url   auth: null,
+157 verbose parsed url   host: null,
+157 verbose parsed url   port: null,
+157 verbose parsed url   hostname: null,
+157 verbose parsed url   hash: null,
+157 verbose parsed url   search: null,
+157 verbose parsed url   query: null,
+157 verbose parsed url   pathname: 'jsesc@~0.4.3',
+157 verbose parsed url   path: 'jsesc@~0.4.3',
+157 verbose parsed url   href: 'jsesc@~0.4.3' }
+158 verbose cache add name="jsesc" spec="~0.4.3" args=["jsesc","~0.4.3"]
+159 verbose parsed url { protocol: null,
+159 verbose parsed url   slashes: null,
+159 verbose parsed url   auth: null,
+159 verbose parsed url   host: null,
+159 verbose parsed url   port: null,
+159 verbose parsed url   hostname: null,
+159 verbose parsed url   hash: null,
+159 verbose parsed url   search: null,
+159 verbose parsed url   query: null,
+159 verbose parsed url   pathname: '~0.4.3',
+159 verbose parsed url   path: '~0.4.3',
+159 verbose parsed url   href: '~0.4.3' }
+160 verbose addNamed [ 'jsesc', '~0.4.3' ]
+161 verbose addNamed [ null, '>=0.4.3-0 <0.5.0-0' ]
+162 silly lockFile 6eea1e8d-jsesc-0-4-3 jsesc@~0.4.3
+163 verbose lock jsesc@~0.4.3 /Users/chanon/.npm/6eea1e8d-jsesc-0-4-3.lock
+164 verbose cache add [ 'js-yaml@~3.0.1', null ]
+165 verbose cache add name=undefined spec="js-yaml@~3.0.1" args=["js-yaml@~3.0.1",null]
+166 verbose parsed url { protocol: null,
+166 verbose parsed url   slashes: null,
+166 verbose parsed url   auth: null,
+166 verbose parsed url   host: null,
+166 verbose parsed url   port: null,
+166 verbose parsed url   hostname: null,
+166 verbose parsed url   hash: null,
+166 verbose parsed url   search: null,
+166 verbose parsed url   query: null,
+166 verbose parsed url   pathname: 'js-yaml@~3.0.1',
+166 verbose parsed url   path: 'js-yaml@~3.0.1',
+166 verbose parsed url   href: 'js-yaml@~3.0.1' }
+167 verbose cache add name="js-yaml" spec="~3.0.1" args=["js-yaml","~3.0.1"]
+168 verbose parsed url { protocol: null,
+168 verbose parsed url   slashes: null,
+168 verbose parsed url   auth: null,
+168 verbose parsed url   host: null,
+168 verbose parsed url   port: null,
+168 verbose parsed url   hostname: null,
+168 verbose parsed url   hash: null,
+168 verbose parsed url   search: null,
+168 verbose parsed url   query: null,
+168 verbose parsed url   pathname: '~3.0.1',
+168 verbose parsed url   path: '~3.0.1',
+168 verbose parsed url   href: '~3.0.1' }
+169 verbose addNamed [ 'js-yaml', '~3.0.1' ]
+170 verbose addNamed [ null, '>=3.0.1-0 <3.1.0-0' ]
+171 silly lockFile 48adea8c-js-yaml-3-0-1 js-yaml@~3.0.1
+172 verbose lock js-yaml@~3.0.1 /Users/chanon/.npm/48adea8c-js-yaml-3-0-1.lock
+173 verbose cache add [ 'json-pointer@~0.1.0', null ]
+174 verbose cache add name=undefined spec="json-pointer@~0.1.0" args=["json-pointer@~0.1.0",null]
+175 verbose parsed url { protocol: null,
+175 verbose parsed url   slashes: null,
+175 verbose parsed url   auth: null,
+175 verbose parsed url   host: null,
+175 verbose parsed url   port: null,
+175 verbose parsed url   hostname: null,
+175 verbose parsed url   hash: null,
+175 verbose parsed url   search: null,
+175 verbose parsed url   query: null,
+175 verbose parsed url   pathname: 'json-pointer@~0.1.0',
+175 verbose parsed url   path: 'json-pointer@~0.1.0',
+175 verbose parsed url   href: 'json-pointer@~0.1.0' }
+176 verbose cache add name="json-pointer" spec="~0.1.0" args=["json-pointer","~0.1.0"]
+177 verbose parsed url { protocol: null,
+177 verbose parsed url   slashes: null,
+177 verbose parsed url   auth: null,
+177 verbose parsed url   host: null,
+177 verbose parsed url   port: null,
+177 verbose parsed url   hostname: null,
+177 verbose parsed url   hash: null,
+177 verbose parsed url   search: null,
+177 verbose parsed url   query: null,
+177 verbose parsed url   pathname: '~0.1.0',
+177 verbose parsed url   path: '~0.1.0',
+177 verbose parsed url   href: '~0.1.0' }
+178 verbose addNamed [ 'json-pointer', '~0.1.0' ]
+179 verbose addNamed [ null, '>=0.1.0-0 <0.2.0-0' ]
+180 silly lockFile 1630aaf2-json-pointer-0-1-0 json-pointer@~0.1.0
+181 verbose lock json-pointer@~0.1.0 /Users/chanon/.npm/1630aaf2-json-pointer-0-1-0.lock
+182 verbose cache add [ 'ministyle@~0.1.3', null ]
+183 verbose cache add name=undefined spec="ministyle@~0.1.3" args=["ministyle@~0.1.3",null]
+184 verbose parsed url { protocol: null,
+184 verbose parsed url   slashes: null,
+184 verbose parsed url   auth: null,
+184 verbose parsed url   host: null,
+184 verbose parsed url   port: null,
+184 verbose parsed url   hostname: null,
+184 verbose parsed url   hash: null,
+184 verbose parsed url   search: null,
+184 verbose parsed url   query: null,
+184 verbose parsed url   pathname: 'ministyle@~0.1.3',
+184 verbose parsed url   path: 'ministyle@~0.1.3',
+184 verbose parsed url   href: 'ministyle@~0.1.3' }
+185 verbose cache add name="ministyle" spec="~0.1.3" args=["ministyle","~0.1.3"]
+186 verbose parsed url { protocol: null,
+186 verbose parsed url   slashes: null,
+186 verbose parsed url   auth: null,
+186 verbose parsed url   host: null,
+186 verbose parsed url   port: null,
+186 verbose parsed url   hostname: null,
+186 verbose parsed url   hash: null,
+186 verbose parsed url   search: null,
+186 verbose parsed url   query: null,
+186 verbose parsed url   pathname: '~0.1.3',
+186 verbose parsed url   path: '~0.1.3',
+186 verbose parsed url   href: '~0.1.3' }
+187 verbose addNamed [ 'ministyle', '~0.1.3' ]
+188 verbose addNamed [ null, '>=0.1.3-0 <0.2.0-0' ]
+189 silly lockFile 33b2259b-ministyle-0-1-3 ministyle@~0.1.3
+190 verbose lock ministyle@~0.1.3 /Users/chanon/.npm/33b2259b-ministyle-0-1-3.lock
+191 silly addNameRange { name: 'mkdirp', range: '>=0.3.5-0 <0.4.0-0', hasData: false }
+192 silly addNameRange { name: 'semver', range: '>=2.2.1-0 <2.3.0-0', hasData: false }
+193 silly addNameRange { name: 'tv4', range: '>=1.0.14-0 <1.1.0-0', hasData: false }
+194 verbose cache add [ 'miniwrite@~0.1.3', null ]
+195 verbose cache add name=undefined spec="miniwrite@~0.1.3" args=["miniwrite@~0.1.3",null]
+196 verbose parsed url { protocol: null,
+196 verbose parsed url   slashes: null,
+196 verbose parsed url   auth: null,
+196 verbose parsed url   host: null,
+196 verbose parsed url   port: null,
+196 verbose parsed url   hostname: null,
+196 verbose parsed url   hash: null,
+196 verbose parsed url   search: null,
+196 verbose parsed url   query: null,
+196 verbose parsed url   pathname: 'miniwrite@~0.1.3',
+196 verbose parsed url   path: 'miniwrite@~0.1.3',
+196 verbose parsed url   href: 'miniwrite@~0.1.3' }
+197 verbose cache add name="miniwrite" spec="~0.1.3" args=["miniwrite","~0.1.3"]
+198 verbose parsed url { protocol: null,
+198 verbose parsed url   slashes: null,
+198 verbose parsed url   auth: null,
+198 verbose parsed url   host: null,
+198 verbose parsed url   port: null,
+198 verbose parsed url   hostname: null,
+198 verbose parsed url   hash: null,
+198 verbose parsed url   search: null,
+198 verbose parsed url   query: null,
+198 verbose parsed url   pathname: '~0.1.3',
+198 verbose parsed url   path: '~0.1.3',
+198 verbose parsed url   href: '~0.1.3' }
+199 verbose addNamed [ 'miniwrite', '~0.1.3' ]
+200 verbose addNamed [ null, '>=0.1.3-0 <0.2.0-0' ]
+201 silly lockFile 0cbc2735-miniwrite-0-1-3 miniwrite@~0.1.3
+202 verbose lock miniwrite@~0.1.3 /Users/chanon/.npm/0cbc2735-miniwrite-0-1-3.lock
+203 verbose cache add [ 'minitable@~0.0.2', null ]
+204 verbose cache add name=undefined spec="minitable@~0.0.2" args=["minitable@~0.0.2",null]
+205 verbose parsed url { protocol: null,
+205 verbose parsed url   slashes: null,
+205 verbose parsed url   auth: null,
+205 verbose parsed url   host: null,
+205 verbose parsed url   port: null,
+205 verbose parsed url   hostname: null,
+205 verbose parsed url   hash: null,
+205 verbose parsed url   search: null,
+205 verbose parsed url   query: null,
+205 verbose parsed url   pathname: 'minitable@~0.0.2',
+205 verbose parsed url   path: 'minitable@~0.0.2',
+205 verbose parsed url   href: 'minitable@~0.0.2' }
+206 verbose cache add name="minitable" spec="~0.0.2" args=["minitable","~0.0.2"]
+207 verbose parsed url { protocol: null,
+207 verbose parsed url   slashes: null,
+207 verbose parsed url   auth: null,
+207 verbose parsed url   host: null,
+207 verbose parsed url   port: null,
+207 verbose parsed url   hostname: null,
+207 verbose parsed url   hash: null,
+207 verbose parsed url   search: null,
+207 verbose parsed url   query: null,
+207 verbose parsed url   pathname: '~0.0.2',
+207 verbose parsed url   path: '~0.0.2',
+207 verbose parsed url   href: '~0.0.2' }
+208 verbose addNamed [ 'minitable', '~0.0.2' ]
+209 verbose addNamed [ null, '>=0.0.2-0 <0.1.0-0' ]
+210 silly lockFile 67c02929-minitable-0-0-2 minitable@~0.0.2
+211 verbose lock minitable@~0.0.2 /Users/chanon/.npm/67c02929-minitable-0-0-2.lock
+212 verbose cache add [ 'es6-shim@0.9.1', null ]
+213 verbose cache add name=undefined spec="es6-shim@0.9.1" args=["es6-shim@0.9.1",null]
+214 verbose parsed url { protocol: null,
+214 verbose parsed url   slashes: null,
+214 verbose parsed url   auth: null,
+214 verbose parsed url   host: null,
+214 verbose parsed url   port: null,
+214 verbose parsed url   hostname: null,
+214 verbose parsed url   hash: null,
+214 verbose parsed url   search: null,
+214 verbose parsed url   query: null,
+214 verbose parsed url   pathname: 'es6-shim@0.9.1',
+214 verbose parsed url   path: 'es6-shim@0.9.1',
+214 verbose parsed url   href: 'es6-shim@0.9.1' }
+215 verbose cache add name="es6-shim" spec="0.9.1" args=["es6-shim","0.9.1"]
+216 verbose parsed url { protocol: null,
+216 verbose parsed url   slashes: null,
+216 verbose parsed url   auth: null,
+216 verbose parsed url   host: null,
+216 verbose parsed url   port: null,
+216 verbose parsed url   hostname: null,
+216 verbose parsed url   hash: null,
+216 verbose parsed url   search: null,
+216 verbose parsed url   query: null,
+216 verbose parsed url   pathname: '0.9.1',
+216 verbose parsed url   path: '0.9.1',
+216 verbose parsed url   href: '0.9.1' }
+217 verbose addNamed [ 'es6-shim', '0.9.1' ]
+218 verbose addNamed [ '0.9.1', '0.9.1' ]
+219 silly lockFile a136f937-es6-shim-0-9-1 es6-shim@0.9.1
+220 verbose lock es6-shim@0.9.1 /Users/chanon/.npm/a136f937-es6-shim-0-9-1.lock
+221 verbose cache add [ 'request@~2.33.0', null ]
+222 verbose cache add name=undefined spec="request@~2.33.0" args=["request@~2.33.0",null]
+223 verbose parsed url { protocol: null,
+223 verbose parsed url   slashes: null,
+223 verbose parsed url   auth: null,
+223 verbose parsed url   host: null,
+223 verbose parsed url   port: null,
+223 verbose parsed url   hostname: null,
+223 verbose parsed url   hash: null,
+223 verbose parsed url   search: null,
+223 verbose parsed url   query: null,
+223 verbose parsed url   pathname: 'request@~2.33.0',
+223 verbose parsed url   path: 'request@~2.33.0',
+223 verbose parsed url   href: 'request@~2.33.0' }
+224 verbose cache add name="request" spec="~2.33.0" args=["request","~2.33.0"]
+225 verbose parsed url { protocol: null,
+225 verbose parsed url   slashes: null,
+225 verbose parsed url   auth: null,
+225 verbose parsed url   host: null,
+225 verbose parsed url   port: null,
+225 verbose parsed url   hostname: null,
+225 verbose parsed url   hash: null,
+225 verbose parsed url   search: null,
+225 verbose parsed url   query: null,
+225 verbose parsed url   pathname: '~2.33.0',
+225 verbose parsed url   path: '~2.33.0',
+225 verbose parsed url   href: '~2.33.0' }
+226 verbose addNamed [ 'request', '~2.33.0' ]
+227 verbose addNamed [ null, '>=2.33.0-0 <2.34.0-0' ]
+228 silly lockFile bc831a1d-request-2-33-0 request@~2.33.0
+229 verbose lock request@~2.33.0 /Users/chanon/.npm/bc831a1d-request-2-33-0.lock
+230 verbose cache add [ 'event-stream@~3.1.0', null ]
+231 verbose cache add name=undefined spec="event-stream@~3.1.0" args=["event-stream@~3.1.0",null]
+232 verbose parsed url { protocol: null,
+232 verbose parsed url   slashes: null,
+232 verbose parsed url   auth: null,
+232 verbose parsed url   host: null,
+232 verbose parsed url   port: null,
+232 verbose parsed url   hostname: null,
+232 verbose parsed url   hash: null,
+232 verbose parsed url   search: null,
+232 verbose parsed url   query: null,
+232 verbose parsed url   pathname: 'event-stream@~3.1.0',
+232 verbose parsed url   path: 'event-stream@~3.1.0',
+232 verbose parsed url   href: 'event-stream@~3.1.0' }
+233 verbose cache add name="event-stream" spec="~3.1.0" args=["event-stream","~3.1.0"]
+234 verbose parsed url { protocol: null,
+234 verbose parsed url   slashes: null,
+234 verbose parsed url   auth: null,
+234 verbose parsed url   host: null,
+234 verbose parsed url   port: null,
+234 verbose parsed url   hostname: null,
+234 verbose parsed url   hash: null,
+234 verbose parsed url   search: null,
+234 verbose parsed url   query: null,
+234 verbose parsed url   pathname: '~3.1.0',
+234 verbose parsed url   path: '~3.1.0',
+234 verbose parsed url   href: '~3.1.0' }
+235 verbose addNamed [ 'event-stream', '~3.1.0' ]
+236 verbose addNamed [ null, '>=3.1.0-0 <3.2.0-0' ]
+237 silly lockFile 98d1a8ea-event-stream-3-1-0 event-stream@~3.1.0
+238 verbose lock event-stream@~3.1.0 /Users/chanon/.npm/98d1a8ea-event-stream-3-1-0.lock
+239 verbose cache add [ 'bufferstream@~0.6.2', null ]
+240 verbose cache add name=undefined spec="bufferstream@~0.6.2" args=["bufferstream@~0.6.2",null]
+241 verbose parsed url { protocol: null,
+241 verbose parsed url   slashes: null,
+241 verbose parsed url   auth: null,
+241 verbose parsed url   host: null,
+241 verbose parsed url   port: null,
+241 verbose parsed url   hostname: null,
+241 verbose parsed url   hash: null,
+241 verbose parsed url   search: null,
+241 verbose parsed url   query: null,
+241 verbose parsed url   pathname: 'bufferstream@~0.6.2',
+241 verbose parsed url   path: 'bufferstream@~0.6.2',
+241 verbose parsed url   href: 'bufferstream@~0.6.2' }
+242 verbose cache add name="bufferstream" spec="~0.6.2" args=["bufferstream","~0.6.2"]
+243 verbose parsed url { protocol: null,
+243 verbose parsed url   slashes: null,
+243 verbose parsed url   auth: null,
+243 verbose parsed url   host: null,
+243 verbose parsed url   port: null,
+243 verbose parsed url   hostname: null,
+243 verbose parsed url   hash: null,
+243 verbose parsed url   search: null,
+243 verbose parsed url   query: null,
+243 verbose parsed url   pathname: '~0.6.2',
+243 verbose parsed url   path: '~0.6.2',
+243 verbose parsed url   href: '~0.6.2' }
+244 verbose addNamed [ 'bufferstream', '~0.6.2' ]
+245 verbose addNamed [ null, '>=0.6.2-0 <0.7.0-0' ]
+246 silly lockFile c616727d-bufferstream-0-6-2 bufferstream@~0.6.2
+247 verbose lock bufferstream@~0.6.2 /Users/chanon/.npm/c616727d-bufferstream-0-6-2.lock
+248 verbose cache add [ 'update-notifier@git://github.com/Bartvds/update-notifier/#fix/fork',
+248 verbose cache add   null ]
+249 verbose cache add name=undefined spec="update-notifier@git://github.com/Bartvds/update-notifier/#fix/fork" args=["update-notifier@git://github.com/Bartvds/update-notifier/#fix/fork",null]
+250 verbose parsed url { protocol: null,
+250 verbose parsed url   slashes: null,
+250 verbose parsed url   auth: null,
+250 verbose parsed url   host: null,
+250 verbose parsed url   port: null,
+250 verbose parsed url   hostname: null,
+250 verbose parsed url   hash: '#fix/fork',
+250 verbose parsed url   search: null,
+250 verbose parsed url   query: null,
+250 verbose parsed url   pathname: 'update-notifier@git://github.com/Bartvds/update-notifier/',
+250 verbose parsed url   path: 'update-notifier@git://github.com/Bartvds/update-notifier/',
+250 verbose parsed url   href: 'update-notifier@git://github.com/Bartvds/update-notifier/#fix/fork' }
+251 verbose cache add name="update-notifier" spec="git://github.com/Bartvds/update-notifier/#fix/fork" args=["update-notifier","git://github.com/Bartvds/update-notifier/#fix/fork"]
+252 verbose parsed url { protocol: 'git:',
+252 verbose parsed url   slashes: true,
+252 verbose parsed url   auth: null,
+252 verbose parsed url   host: 'github.com',
+252 verbose parsed url   port: null,
+252 verbose parsed url   hostname: 'github.com',
+252 verbose parsed url   hash: '#fix/fork',
+252 verbose parsed url   search: null,
+252 verbose parsed url   query: null,
+252 verbose parsed url   pathname: '/Bartvds/update-notifier/',
+252 verbose parsed url   path: '/Bartvds/update-notifier/',
+252 verbose parsed url   href: 'git://github.com/Bartvds/update-notifier/#fix/fork' }
+253 silly lockFile 24638485-Bartvds-update-notifier-fix-fork git://github.com/Bartvds/update-notifier/#fix/fork
+254 verbose lock git://github.com/Bartvds/update-notifier/#fix/fork /Users/chanon/.npm/24638485-Bartvds-update-notifier-fix-fork.lock
+255 verbose cache add [ 'universal-analytics@~0.3.2', null ]
+256 verbose cache add name=undefined spec="universal-analytics@~0.3.2" args=["universal-analytics@~0.3.2",null]
+257 verbose parsed url { protocol: null,
+257 verbose parsed url   slashes: null,
+257 verbose parsed url   auth: null,
+257 verbose parsed url   host: null,
+257 verbose parsed url   port: null,
+257 verbose parsed url   hostname: null,
+257 verbose parsed url   hash: null,
+257 verbose parsed url   search: null,
+257 verbose parsed url   query: null,
+257 verbose parsed url   pathname: 'universal-analytics@~0.3.2',
+257 verbose parsed url   path: 'universal-analytics@~0.3.2',
+257 verbose parsed url   href: 'universal-analytics@~0.3.2' }
+258 verbose cache add name="universal-analytics" spec="~0.3.2" args=["universal-analytics","~0.3.2"]
+259 verbose parsed url { protocol: null,
+259 verbose parsed url   slashes: null,
+259 verbose parsed url   auth: null,
+259 verbose parsed url   host: null,
+259 verbose parsed url   port: null,
+259 verbose parsed url   hostname: null,
+259 verbose parsed url   hash: null,
+259 verbose parsed url   search: null,
+259 verbose parsed url   query: null,
+259 verbose parsed url   pathname: '~0.3.2',
+259 verbose parsed url   path: '~0.3.2',
+259 verbose parsed url   href: '~0.3.2' }
+260 verbose addNamed [ 'universal-analytics', '~0.3.2' ]
+261 verbose addNamed [ null, '>=0.3.2-0 <0.4.0-0' ]
+262 silly lockFile 583e0530-universal-analytics-0-3-2 universal-analytics@~0.3.2
+263 verbose lock universal-analytics@~0.3.2 /Users/chanon/.npm/583e0530-universal-analytics-0-3-2.lock
+264 verbose cache add [ 'uuid@~1.4.1', null ]
+265 verbose cache add name=undefined spec="uuid@~1.4.1" args=["uuid@~1.4.1",null]
+266 verbose parsed url { protocol: null,
+266 verbose parsed url   slashes: null,
+266 verbose parsed url   auth: null,
+266 verbose parsed url   host: null,
+266 verbose parsed url   port: null,
+266 verbose parsed url   hostname: null,
+266 verbose parsed url   hash: null,
+266 verbose parsed url   search: null,
+266 verbose parsed url   query: null,
+266 verbose parsed url   pathname: 'uuid@~1.4.1',
+266 verbose parsed url   path: 'uuid@~1.4.1',
+266 verbose parsed url   href: 'uuid@~1.4.1' }
+267 verbose cache add name="uuid" spec="~1.4.1" args=["uuid","~1.4.1"]
+268 verbose parsed url { protocol: null,
+268 verbose parsed url   slashes: null,
+268 verbose parsed url   auth: null,
+268 verbose parsed url   host: null,
+268 verbose parsed url   port: null,
+268 verbose parsed url   hostname: null,
+268 verbose parsed url   hash: null,
+268 verbose parsed url   search: null,
+268 verbose parsed url   query: null,
+268 verbose parsed url   pathname: '~1.4.1',
+268 verbose parsed url   path: '~1.4.1',
+268 verbose parsed url   href: '~1.4.1' }
+269 verbose addNamed [ 'uuid', '~1.4.1' ]
+270 verbose addNamed [ null, '>=1.4.1-0 <1.5.0-0' ]
+271 silly lockFile bc91a07e-uuid-1-4-1 uuid@~1.4.1
+272 verbose lock uuid@~1.4.1 /Users/chanon/.npm/bc91a07e-uuid-1-4-1.lock
+273 verbose cache add [ 'weak-map@~1.0.3', null ]
+274 verbose cache add name=undefined spec="weak-map@~1.0.3" args=["weak-map@~1.0.3",null]
+275 verbose parsed url { protocol: null,
+275 verbose parsed url   slashes: null,
+275 verbose parsed url   auth: null,
+275 verbose parsed url   host: null,
+275 verbose parsed url   port: null,
+275 verbose parsed url   hostname: null,
+275 verbose parsed url   hash: null,
+275 verbose parsed url   search: null,
+275 verbose parsed url   query: null,
+275 verbose parsed url   pathname: 'weak-map@~1.0.3',
+275 verbose parsed url   path: 'weak-map@~1.0.3',
+275 verbose parsed url   href: 'weak-map@~1.0.3' }
+276 verbose cache add name="weak-map" spec="~1.0.3" args=["weak-map","~1.0.3"]
+277 verbose parsed url { protocol: null,
+277 verbose parsed url   slashes: null,
+277 verbose parsed url   auth: null,
+277 verbose parsed url   host: null,
+277 verbose parsed url   port: null,
+277 verbose parsed url   hostname: null,
+277 verbose parsed url   hash: null,
+277 verbose parsed url   search: null,
+277 verbose parsed url   query: null,
+277 verbose parsed url   pathname: '~1.0.3',
+277 verbose parsed url   path: '~1.0.3',
+277 verbose parsed url   href: '~1.0.3' }
+278 verbose addNamed [ 'weak-map', '~1.0.3' ]
+279 verbose addNamed [ null, '>=1.0.3-0 <1.1.0-0' ]
+280 silly lockFile cfb82fcc-weak-map-1-0-3 weak-map@~1.0.3
+281 verbose lock weak-map@~1.0.3 /Users/chanon/.npm/cfb82fcc-weak-map-1-0-3.lock
+282 verbose cache add [ 'detect-indent@~0.1.3', null ]
+283 verbose cache add name=undefined spec="detect-indent@~0.1.3" args=["detect-indent@~0.1.3",null]
+284 verbose parsed url { protocol: null,
+284 verbose parsed url   slashes: null,
+284 verbose parsed url   auth: null,
+284 verbose parsed url   host: null,
+284 verbose parsed url   port: null,
+284 verbose parsed url   hostname: null,
+284 verbose parsed url   hash: null,
+284 verbose parsed url   search: null,
+284 verbose parsed url   query: null,
+284 verbose parsed url   pathname: 'detect-indent@~0.1.3',
+284 verbose parsed url   path: 'detect-indent@~0.1.3',
+284 verbose parsed url   href: 'detect-indent@~0.1.3' }
+285 verbose cache add name="detect-indent" spec="~0.1.3" args=["detect-indent","~0.1.3"]
+286 verbose parsed url { protocol: null,
+286 verbose parsed url   slashes: null,
+286 verbose parsed url   auth: null,
+286 verbose parsed url   host: null,
+286 verbose parsed url   port: null,
+286 verbose parsed url   hostname: null,
+286 verbose parsed url   hash: null,
+286 verbose parsed url   search: null,
+286 verbose parsed url   query: null,
+286 verbose parsed url   pathname: '~0.1.3',
+286 verbose parsed url   path: '~0.1.3',
+286 verbose parsed url   href: '~0.1.3' }
+287 verbose addNamed [ 'detect-indent', '~0.1.3' ]
+288 verbose addNamed [ null, '>=0.1.3-0 <0.2.0-0' ]
+289 silly lockFile 41bc8309-detect-indent-0-1-3 detect-indent@~0.1.3
+290 verbose lock detect-indent@~0.1.3 /Users/chanon/.npm/41bc8309-detect-indent-0-1-3.lock
+291 silly addNameRange { name: 'tv4-reporter',
+291 silly addNameRange   range: '>=0.0.4-0 <0.1.0-0',
+291 silly addNameRange   hasData: false }
+292 silly addNameRange { name: 'jsesc', range: '>=0.4.3-0 <0.5.0-0', hasData: false }
+293 silly addNameRange { name: 'js-yaml', range: '>=3.0.1-0 <3.1.0-0', hasData: false }
+294 silly addNameRange { name: 'json-pointer',
+294 silly addNameRange   range: '>=0.1.0-0 <0.2.0-0',
+294 silly addNameRange   hasData: false }
+295 verbose cache add [ 'q@~0.9.7', null ]
+296 verbose cache add name=undefined spec="q@~0.9.7" args=["q@~0.9.7",null]
+297 verbose parsed url { protocol: null,
+297 verbose parsed url   slashes: null,
+297 verbose parsed url   auth: null,
+297 verbose parsed url   host: null,
+297 verbose parsed url   port: null,
+297 verbose parsed url   hostname: null,
+297 verbose parsed url   hash: null,
+297 verbose parsed url   search: null,
+297 verbose parsed url   query: null,
+297 verbose parsed url   pathname: 'q@~0.9.7',
+297 verbose parsed url   path: 'q@~0.9.7',
+297 verbose parsed url   href: 'q@~0.9.7' }
+298 verbose cache add name="q" spec="~0.9.7" args=["q","~0.9.7"]
+299 verbose parsed url { protocol: null,
+299 verbose parsed url   slashes: null,
+299 verbose parsed url   auth: null,
+299 verbose parsed url   host: null,
+299 verbose parsed url   port: null,
+299 verbose parsed url   hostname: null,
+299 verbose parsed url   hash: null,
+299 verbose parsed url   search: null,
+299 verbose parsed url   query: null,
+299 verbose parsed url   pathname: '~0.9.7',
+299 verbose parsed url   path: '~0.9.7',
+299 verbose parsed url   href: '~0.9.7' }
+300 verbose addNamed [ 'q', '~0.9.7' ]
+301 verbose addNamed [ null, '>=0.9.7-0 <0.10.0-0' ]
+302 silly lockFile 9ea2316a-q-0-9-7 q@~0.9.7
+303 verbose lock q@~0.9.7 /Users/chanon/.npm/9ea2316a-q-0-9-7.lock
+304 silly addNameRange { name: 'ministyle',
+304 silly addNameRange   range: '>=0.1.3-0 <0.2.0-0',
+304 silly addNameRange   hasData: false }
+305 silly addNameRange { name: 'miniwrite',
+305 silly addNameRange   range: '>=0.1.3-0 <0.2.0-0',
+305 silly addNameRange   hasData: false }
+306 silly addNameRange { name: 'minitable',
+306 silly addNameRange   range: '>=0.0.2-0 <0.1.0-0',
+306 silly addNameRange   hasData: false }
+307 silly addNameRange { name: 'request',
+307 silly addNameRange   range: '>=2.33.0-0 <2.34.0-0',
+307 silly addNameRange   hasData: false }
+308 silly addNameRange { name: 'event-stream',
+308 silly addNameRange   range: '>=3.1.0-0 <3.2.0-0',
+308 silly addNameRange   hasData: false }
+309 silly addNameRange { name: 'bufferstream',
+309 silly addNameRange   range: '>=0.6.2-0 <0.7.0-0',
+309 silly addNameRange   hasData: false }
+310 silly addNameRange { name: 'universal-analytics',
+310 silly addNameRange   range: '>=0.3.2-0 <0.4.0-0',
+310 silly addNameRange   hasData: false }
+311 silly addNameRange { name: 'uuid', range: '>=1.4.1-0 <1.5.0-0', hasData: false }
+312 silly addNameRange { name: 'weak-map', range: '>=1.0.3-0 <1.1.0-0', hasData: false }
+313 silly addNameRange { name: 'detect-indent',
+313 silly addNameRange   range: '>=0.1.3-0 <0.2.0-0',
+313 silly addNameRange   hasData: false }
+314 silly addNameRange { name: 'q', range: '>=0.9.7-0 <0.10.0-0', hasData: false }
+315 verbose url raw q-io
+316 verbose url resolving [ 'https://registry.npmjs.org/', './q-io' ]
+317 verbose url resolved https://registry.npmjs.org/q-io
+318 info trying registry request attempt 1 at 16:10:38
+319 verbose etag "4OTRJW88H9GT93YZUA4KQJ2DC"
+320 http GET https://registry.npmjs.org/q-io
+321 verbose url raw exit
+322 verbose url resolving [ 'https://registry.npmjs.org/', './exit' ]
+323 verbose url resolved https://registry.npmjs.org/exit
+324 info trying registry request attempt 1 at 16:10:38
+325 verbose etag "DVJN9TPFFB8ARN8HPJZDEFYKX"
+326 http GET https://registry.npmjs.org/exit
+327 verbose url raw open
+328 verbose url resolving [ 'https://registry.npmjs.org/', './open' ]
+329 verbose url resolved https://registry.npmjs.org/open
+330 info trying registry request attempt 1 at 16:10:38
+331 verbose etag "D472O3TZGENWCX6VVC3Z6AGIZ"
+332 http GET https://registry.npmjs.org/open
+333 verbose url raw mkdirp
+334 verbose url resolving [ 'https://registry.npmjs.org/', './mkdirp' ]
+335 verbose url resolved https://registry.npmjs.org/mkdirp
+336 info trying registry request attempt 1 at 16:10:38
+337 verbose etag "5FARIAAE0490H7WN5U9SWG9X0"
+338 http GET https://registry.npmjs.org/mkdirp
+339 verbose url raw tv4
+340 verbose url resolving [ 'https://registry.npmjs.org/', './tv4' ]
+341 verbose url resolved https://registry.npmjs.org/tv4
+342 info trying registry request attempt 1 at 16:10:38
+343 verbose etag "BDIA66P4259BOUBNVIDOHH2T2"
+344 http GET https://registry.npmjs.org/tv4
+345 verbose url raw semver
+346 verbose url resolving [ 'https://registry.npmjs.org/', './semver' ]
+347 verbose url resolved https://registry.npmjs.org/semver
+348 info trying registry request attempt 1 at 16:10:38
+349 verbose etag "1QYLL0EPRWSQVA9ZZQ4SQYHKN"
+350 http GET https://registry.npmjs.org/semver
+351 verbose url raw tv4-reporter
+352 verbose url resolving [ 'https://registry.npmjs.org/', './tv4-reporter' ]
+353 verbose url resolved https://registry.npmjs.org/tv4-reporter
+354 info trying registry request attempt 1 at 16:10:38
+355 verbose etag "B0GJ29N8YZJ05F6LY4A9JM72J"
+356 http GET https://registry.npmjs.org/tv4-reporter
+357 verbose url raw uri-templates/0.1.2
+358 verbose url resolving [ 'https://registry.npmjs.org/', './uri-templates/0.1.2' ]
+359 verbose url resolved https://registry.npmjs.org/uri-templates/0.1.2
+360 info trying registry request attempt 1 at 16:10:38
+361 verbose etag "5RK9EME0A13AU8Q0DYB9WA7V8"
+362 http GET https://registry.npmjs.org/uri-templates/0.1.2
+363 verbose url raw minimist/0.0.7
+364 verbose url resolving [ 'https://registry.npmjs.org/', './minimist/0.0.7' ]
+365 verbose url resolved https://registry.npmjs.org/minimist/0.0.7
+366 info trying registry request attempt 1 at 16:10:38
+367 verbose etag "69KK13IWXCX7XELJPTNT2R7QS"
+368 http GET https://registry.npmjs.org/minimist/0.0.7
+369 verbose url raw assertion-error/1.0.0
+370 verbose url resolving [ 'https://registry.npmjs.org/', './assertion-error/1.0.0' ]
+371 verbose url resolved https://registry.npmjs.org/assertion-error/1.0.0
+372 info trying registry request attempt 1 at 16:10:38
+373 verbose etag "2Y8TLV3KM2WAT0R8YRW4V9UOV"
+374 http GET https://registry.npmjs.org/assertion-error/1.0.0
+375 verbose url raw jsesc
+376 verbose url resolving [ 'https://registry.npmjs.org/', './jsesc' ]
+377 verbose url resolved https://registry.npmjs.org/jsesc
+378 info trying registry request attempt 1 at 16:10:38
+379 verbose etag "AF1N4PO0F9WRA4GCOSGL0W98P"
+380 http GET https://registry.npmjs.org/jsesc
+381 verbose url raw js-yaml
+382 verbose url resolving [ 'https://registry.npmjs.org/', './js-yaml' ]
+383 verbose url resolved https://registry.npmjs.org/js-yaml
+384 info trying registry request attempt 1 at 16:10:38
+385 verbose etag "A03O0MK0020IRZKHS2D5GM5TV"
+386 http GET https://registry.npmjs.org/js-yaml
+387 verbose url raw json-pointer
+388 verbose url resolving [ 'https://registry.npmjs.org/', './json-pointer' ]
+389 verbose url resolved https://registry.npmjs.org/json-pointer
+390 info trying registry request attempt 1 at 16:10:38
+391 verbose etag "E7FD71NRVH515M58ONWL5Y1LF"
+392 http GET https://registry.npmjs.org/json-pointer
+393 verbose url raw ministyle
+394 verbose url resolving [ 'https://registry.npmjs.org/', './ministyle' ]
+395 verbose url resolved https://registry.npmjs.org/ministyle
+396 info trying registry request attempt 1 at 16:10:38
+397 verbose etag "A3WF4X7QU13BF7I1KN66RP6J9"
+398 http GET https://registry.npmjs.org/ministyle
+399 verbose url raw miniwrite
+400 verbose url resolving [ 'https://registry.npmjs.org/', './miniwrite' ]
+401 verbose url resolved https://registry.npmjs.org/miniwrite
+402 info trying registry request attempt 1 at 16:10:38
+403 verbose etag "BM1BUYY16UZLSUTUTQDGGNKRT"
+404 http GET https://registry.npmjs.org/miniwrite
+405 verbose url raw minitable
+406 verbose url resolving [ 'https://registry.npmjs.org/', './minitable' ]
+407 verbose url resolved https://registry.npmjs.org/minitable
+408 info trying registry request attempt 1 at 16:10:38
+409 verbose etag "33PLOPNIJF86AE9VSX7V0ZD2I"
+410 http GET https://registry.npmjs.org/minitable
+411 verbose url raw es6-shim/0.9.1
+412 verbose url resolving [ 'https://registry.npmjs.org/', './es6-shim/0.9.1' ]
+413 verbose url resolved https://registry.npmjs.org/es6-shim/0.9.1
+414 info trying registry request attempt 1 at 16:10:38
+415 verbose etag "4ZKJCDK57KB5UONDKGU307SAE"
+416 http GET https://registry.npmjs.org/es6-shim/0.9.1
+417 verbose url raw request
+418 verbose url resolving [ 'https://registry.npmjs.org/', './request' ]
+419 verbose url resolved https://registry.npmjs.org/request
+420 info trying registry request attempt 1 at 16:10:38
+421 verbose etag "1DX53ZO2NSMSDL8AVIJRJYFTT"
+422 http GET https://registry.npmjs.org/request
+423 verbose url raw event-stream
+424 verbose url resolving [ 'https://registry.npmjs.org/', './event-stream' ]
+425 verbose url resolved https://registry.npmjs.org/event-stream
+426 info trying registry request attempt 1 at 16:10:38
+427 verbose etag "1LTSFZQGCVNPJNUH1SKQDZNRE"
+428 http GET https://registry.npmjs.org/event-stream
+429 verbose url raw bufferstream
+430 verbose url resolving [ 'https://registry.npmjs.org/', './bufferstream' ]
+431 verbose url resolved https://registry.npmjs.org/bufferstream
+432 info trying registry request attempt 1 at 16:10:38
+433 verbose etag "BKTPHLGHPR2NRAO8DJV1XQJK9"
+434 http GET https://registry.npmjs.org/bufferstream
+435 verbose url raw universal-analytics
+436 verbose url resolving [ 'https://registry.npmjs.org/', './universal-analytics' ]
+437 verbose url resolved https://registry.npmjs.org/universal-analytics
+438 info trying registry request attempt 1 at 16:10:38
+439 verbose etag "AFHGGBUFH9C92ZNY3T110LWQ3"
+440 http GET https://registry.npmjs.org/universal-analytics
+441 verbose url raw uuid
+442 verbose url resolving [ 'https://registry.npmjs.org/', './uuid' ]
+443 verbose url resolved https://registry.npmjs.org/uuid
+444 info trying registry request attempt 1 at 16:10:38
+445 verbose etag "CAVTKQJ6L8C1AVGCRASCOK8H3"
+446 http GET https://registry.npmjs.org/uuid
+447 verbose url raw weak-map
+448 verbose url resolving [ 'https://registry.npmjs.org/', './weak-map' ]
+449 verbose url resolved https://registry.npmjs.org/weak-map
+450 info trying registry request attempt 1 at 16:10:38
+451 verbose etag "BCTWDIK1QIYHE3MNSVC3ES58Q"
+452 http GET https://registry.npmjs.org/weak-map
+453 verbose url raw detect-indent
+454 verbose url resolving [ 'https://registry.npmjs.org/', './detect-indent' ]
+455 verbose url resolved https://registry.npmjs.org/detect-indent
+456 info trying registry request attempt 1 at 16:10:38
+457 verbose etag "CPP8MDNCAL6AFSUE2C021PBI5"
+458 http GET https://registry.npmjs.org/detect-indent
+459 verbose url raw q
+460 verbose url resolving [ 'https://registry.npmjs.org/', './q' ]
+461 verbose url resolved https://registry.npmjs.org/q
+462 info trying registry request attempt 1 at 16:10:38
+463 verbose etag "ECE4IGL2CA3L4Y9PM3BL9SSH4"
+464 http GET https://registry.npmjs.org/q
+465 http 304 https://registry.npmjs.org/open
+466 silly registry.get cb [ 304,
+466 silly registry.get   { date: 'Tue, 22 Jul 2014 09:10:38 GMT',
+466 silly registry.get     server: 'Apache',
+466 silly registry.get     via: '1.1 varnish',
+466 silly registry.get     'last-modified': 'Tue, 22 Jul 2014 09:10:38 GMT',
+466 silly registry.get     'cache-control': 'max-age=60',
+466 silly registry.get     etag: '"D472O3TZGENWCX6VVC3Z6AGIZ"',
+466 silly registry.get     'x-served-by': 'cache-sn87-SIN',
+466 silly registry.get     'x-cache': 'HIT',
+466 silly registry.get     'x-cache-hits': '1',
+466 silly registry.get     'x-timer': 'S1406020238.646803,VS0,VE0',
+466 silly registry.get     vary: 'Accept',
+466 silly registry.get     'content-length': '0',
+466 silly registry.get     'keep-alive': 'timeout=10, max=50',
+466 silly registry.get     connection: 'Keep-Alive' } ]
+467 verbose etag open from cache
+468 http 304 https://registry.npmjs.org/exit
+469 silly registry.get cb [ 304,
+469 silly registry.get   { date: 'Tue, 22 Jul 2014 09:10:38 GMT',
+469 silly registry.get     server: 'Apache',
+469 silly registry.get     via: '1.1 varnish',
+469 silly registry.get     'last-modified': 'Tue, 22 Jul 2014 09:10:38 GMT',
+469 silly registry.get     'cache-control': 'max-age=60',
+469 silly registry.get     etag: '"DVJN9TPFFB8ARN8HPJZDEFYKX"',
+469 silly registry.get     'x-served-by': 'cache-sn89-SIN',
+469 silly registry.get     'x-cache': 'HIT',
+469 silly registry.get     'x-cache-hits': '1',
+469 silly registry.get     'x-timer': 'S1406020238.650790,VS0,VE0',
+469 silly registry.get     vary: 'Accept',
+469 silly registry.get     'content-length': '0',
+469 silly registry.get     'keep-alive': 'timeout=10, max=50',
+469 silly registry.get     connection: 'Keep-Alive' } ]
+470 verbose etag exit from cache
+471 http 304 https://registry.npmjs.org/mkdirp
+472 silly registry.get cb [ 304,
+472 silly registry.get   { date: 'Tue, 22 Jul 2014 09:10:38 GMT',
+472 silly registry.get     server: 'Apache',
+472 silly registry.get     via: '1.1 varnish',
+472 silly registry.get     'last-modified': 'Tue, 22 Jul 2014 09:10:24 GMT',
+472 silly registry.get     'cache-control': 'max-age=60',
+472 silly registry.get     etag: '"5FARIAAE0490H7WN5U9SWG9X0"',
+472 silly registry.get     'x-served-by': 'cache-sn89-SIN',
+472 silly registry.get     'x-cache': 'HIT',
+472 silly registry.get     'x-cache-hits': '2',
+472 silly registry.get     'x-timer': 'S1406020238.654703,VS0,VE0',
+472 silly registry.get     vary: 'Accept',
+472 silly registry.get     'content-length': '0',
+472 silly registry.get     'keep-alive': 'timeout=10, max=50',
+472 silly registry.get     connection: 'Keep-Alive' } ]
+473 verbose etag mkdirp from cache
+474 silly addNameRange number 2 { name: 'exit', range: '>=0.1.1-0 <0.2.0-0', hasData: true }
+475 silly addNameRange versions [ 'exit', [ '0.1.0', '0.1.1', '0.1.2' ] ]
+476 verbose addNamed [ 'exit', '0.1.2' ]
+477 verbose addNamed [ '0.1.2', '0.1.2' ]
+478 silly lockFile 7dd65db3-exit-0-1-2 exit@0.1.2
+479 verbose lock exit@0.1.2 /Users/chanon/.npm/7dd65db3-exit-0-1-2.lock
+480 silly addNameRange number 2 { name: 'open', range: '>=0.0.4-0 <0.1.0-0', hasData: true }
+481 silly addNameRange versions [ 'open', [ '0.0.0', '0.0.2', '0.0.3', '0.0.4', '0.0.5' ] ]
+482 verbose addNamed [ 'open', '0.0.5' ]
+483 verbose addNamed [ '0.0.5', '0.0.5' ]
+484 silly lockFile c6d41519-open-0-0-5 open@0.0.5
+485 verbose lock open@0.0.5 /Users/chanon/.npm/c6d41519-open-0-0-5.lock
+486 silly addNameRange number 2 { name: 'mkdirp', range: '>=0.3.5-0 <0.4.0-0', hasData: true }
+487 silly addNameRange versions [ 'mkdirp',
+487 silly addNameRange   [ '0.0.1',
+487 silly addNameRange     '0.0.2',
+487 silly addNameRange     '0.0.3',
+487 silly addNameRange     '0.0.4',
+487 silly addNameRange     '0.0.5',
+487 silly addNameRange     '0.0.6',
+487 silly addNameRange     '0.0.7',
+487 silly addNameRange     '0.1.0',
+487 silly addNameRange     '0.2.0',
+487 silly addNameRange     '0.2.1',
+487 silly addNameRange     '0.2.2',
+487 silly addNameRange     '0.3.0',
+487 silly addNameRange     '0.3.1',
+487 silly addNameRange     '0.3.2',
+487 silly addNameRange     '0.3.3',
+487 silly addNameRange     '0.3.4',
+487 silly addNameRange     '0.3.5',
+487 silly addNameRange     '0.4.0',
+487 silly addNameRange     '0.4.1',
+487 silly addNameRange     '0.4.2',
+487 silly addNameRange     '0.5.0' ] ]
+488 verbose addNamed [ 'mkdirp', '0.3.5' ]
+489 verbose addNamed [ '0.3.5', '0.3.5' ]
+490 silly lockFile 67d2df2a-mkdirp-0-3-5 mkdirp@0.3.5
+491 verbose lock mkdirp@0.3.5 /Users/chanon/.npm/67d2df2a-mkdirp-0-3-5.lock
+492 silly lockFile 7dd65db3-exit-0-1-2 exit@0.1.2
+493 silly lockFile 7dd65db3-exit-0-1-2 exit@0.1.2
+494 silly lockFile 36e7f3d8-exit-0-1-1 exit@~0.1.1
+495 silly lockFile 36e7f3d8-exit-0-1-1 exit@~0.1.1
+496 silly lockFile c6d41519-open-0-0-5 open@0.0.5
+497 silly lockFile c6d41519-open-0-0-5 open@0.0.5
+498 silly lockFile 93cadc2e-open-0-0-4 open@~0.0.4
+499 silly lockFile 93cadc2e-open-0-0-4 open@~0.0.4
+500 silly lockFile 67d2df2a-mkdirp-0-3-5 mkdirp@0.3.5
+501 silly lockFile 67d2df2a-mkdirp-0-3-5 mkdirp@0.3.5
+502 silly lockFile c3f0fe9b-mkdirp-0-3-5 mkdirp@~0.3.5
+503 silly lockFile c3f0fe9b-mkdirp-0-3-5 mkdirp@~0.3.5
+504 http 304 https://registry.npmjs.org/semver
+505 silly registry.get cb [ 304,
+505 silly registry.get   { date: 'Tue, 22 Jul 2014 09:10:38 GMT',
+505 silly registry.get     server: 'Apache',
+505 silly registry.get     via: '1.1 varnish',
+505 silly registry.get     'last-modified': 'Tue, 22 Jul 2014 09:10:29 GMT',
+505 silly registry.get     'cache-control': 'max-age=60',
+505 silly registry.get     etag: '"1QYLL0EPRWSQVA9ZZQ4SQYHKN"',
+505 silly registry.get     'x-served-by': 'cache-sn87-SIN',
+505 silly registry.get     'x-cache': 'HIT',
+505 silly registry.get     'x-cache-hits': '2',
+505 silly registry.get     'x-timer': 'S1406020238.688330,VS0,VE0',
+505 silly registry.get     vary: 'Accept',
+505 silly registry.get     'content-length': '0',
+505 silly registry.get     'keep-alive': 'timeout=10, max=49',
+505 silly registry.get     connection: 'Keep-Alive' } ]
+506 verbose etag semver from cache
+507 silly addNameRange number 2 { name: 'semver', range: '>=2.2.1-0 <2.3.0-0', hasData: true }
+508 silly addNameRange versions [ 'semver',
+508 silly addNameRange   [ '1.0.0',
+508 silly addNameRange     '1.0.1',
+508 silly addNameRange     '1.0.2',
+508 silly addNameRange     '1.0.3',
+508 silly addNameRange     '1.0.4',
+508 silly addNameRange     '1.0.5',
+508 silly addNameRange     '1.0.6',
+508 silly addNameRange     '1.0.7',
+508 silly addNameRange     '1.0.8',
+508 silly addNameRange     '1.0.9',
+508 silly addNameRange     '1.0.10',
+508 silly addNameRange     '1.0.11',
+508 silly addNameRange     '1.0.12',
+508 silly addNameRange     '1.0.13',
+508 silly addNameRange     '1.0.14',
+508 silly addNameRange     '1.1.0',
+508 silly addNameRange     '1.1.1',
+508 silly addNameRange     '1.1.2',
+508 silly addNameRange     '1.1.3',
+508 silly addNameRange     '1.1.4',
+508 silly addNameRange     '2.0.0-alpha',
+508 silly addNameRange     '2.0.0-beta',
+508 silly addNameRange     '2.0.1',
+508 silly addNameRange     '2.0.2',
+508 silly addNameRange     '2.0.3',
+508 silly addNameRange     '2.0.4',
+508 silly addNameRange     '2.0.5',
+508 silly addNameRange     '2.0.6',
+508 silly addNameRange     '2.0.7',
+508 silly addNameRange     '2.0.8',
+508 silly addNameRange     '2.0.9',
+508 silly addNameRange     '2.0.10',
+508 silly addNameRange     '2.0.11',
+508 silly addNameRange     '2.1.0',
+508 silly addNameRange     '2.2.0',
+508 silly addNameRange     '2.2.1',
+508 silly addNameRange     '2.3.0',
+508 silly addNameRange     '2.3.1' ] ]
+509 verbose addNamed [ 'semver', '2.2.1' ]
+510 verbose addNamed [ '2.2.1', '2.2.1' ]
+511 silly lockFile 609d7676-semver-2-2-1 semver@2.2.1
+512 verbose lock semver@2.2.1 /Users/chanon/.npm/609d7676-semver-2-2-1.lock
+513 silly lockFile 609d7676-semver-2-2-1 semver@2.2.1
+514 silly lockFile 609d7676-semver-2-2-1 semver@2.2.1
+515 silly lockFile 1708eccd-semver-2-2-1 semver@~2.2.1
+516 silly lockFile 1708eccd-semver-2-2-1 semver@~2.2.1
+517 http 304 https://registry.npmjs.org/q-io
+518 silly registry.get cb [ 304,
+518 silly registry.get   { date: 'Tue, 22 Jul 2014 09:10:38 GMT',
+518 silly registry.get     server: 'Apache',
+518 silly registry.get     via: '1.1 varnish',
+518 silly registry.get     'last-modified': 'Tue, 22 Jul 2014 09:10:38 GMT',
+518 silly registry.get     'cache-control': 'max-age=60',
+518 silly registry.get     etag: '"4OTRJW88H9GT93YZUA4KQJ2DC"',
+518 silly registry.get     'x-served-by': 'cache-sn86-SIN',
+518 silly registry.get     'x-cache': 'MISS',
+518 silly registry.get     'x-cache-hits': '0',
+518 silly registry.get     'x-timer': 'S1406020238.644971,VS0,VE244',
+518 silly registry.get     vary: 'Accept',
+518 silly registry.get     'content-length': '0',
+518 silly registry.get     'keep-alive': 'timeout=10, max=50',
+518 silly registry.get     connection: 'Keep-Alive' } ]
+519 verbose etag q-io from cache
+520 http 304 https://registry.npmjs.org/tv4
+521 silly registry.get cb [ 304,
+521 silly registry.get   { date: 'Tue, 22 Jul 2014 09:10:38 GMT',
+521 silly registry.get     server: 'Apache',
+521 silly registry.get     via: '1.1 varnish',
+521 silly registry.get     'last-modified': 'Tue, 22 Jul 2014 09:10:38 GMT',
+521 silly registry.get     'cache-control': 'max-age=60',
+521 silly registry.get     etag: '"BDIA66P4259BOUBNVIDOHH2T2"',
+521 silly registry.get     'x-served-by': 'cache-sn88-SIN',
+521 silly registry.get     'x-cache': 'HIT',
+521 silly registry.get     'x-cache-hits': '1',
+521 silly registry.get     'x-timer': 'S1406020238.659556,VS0,VE242',
+521 silly registry.get     vary: 'Accept',
+521 silly registry.get     'content-length': '0',
+521 silly registry.get     'keep-alive': 'timeout=10, max=50',
+521 silly registry.get     connection: 'Keep-Alive' } ]
+522 verbose etag tv4 from cache
+523 silly addNameRange number 2 { name: 'q-io', range: '>=1.9.4-0 <1.10.0-0', hasData: true }
+524 silly addNameRange versions [ 'q-io',
+524 silly addNameRange   [ '0.0.0',
+524 silly addNameRange     '0.0.1',
+524 silly addNameRange     '0.0.2',
+524 silly addNameRange     '0.0.3',
+524 silly addNameRange     '0.0.4',
+524 silly addNameRange     '0.0.5',
+524 silly addNameRange     '0.0.6',
+524 silly addNameRange     '0.0.8',
+524 silly addNameRange     '0.0.9',
+524 silly addNameRange     '0.0.10',
+524 silly addNameRange     '0.0.11',
+524 silly addNameRange     '0.0.12',
+524 silly addNameRange     '0.0.13',
+524 silly addNameRange     '0.0.14',
+524 silly addNameRange     '0.0.15',
+524 silly addNameRange     '0.0.16',
+524 silly addNameRange     '0.0.17',
+524 silly addNameRange     '0.0.18',
+524 silly addNameRange     '1.0.0',
+524 silly addNameRange     '1.1.0',
+524 silly addNameRange     '1.1.1',
+524 silly addNameRange     '1.2.0',
+524 silly addNameRange     '1.3.0',
+524 silly addNameRange     '1.3.1',
+524 silly addNameRange     '1.3.2',
+524 silly addNameRange     '1.4.0',
+524 silly addNameRange     '1.4.1',
+524 silly addNameRange     '1.5.0',
+524 silly addNameRange     '1.5.1',
+524 silly addNameRange     '1.5.2',
+524 silly addNameRange     '1.5.3',
+524 silly addNameRange     '1.5.4',
+524 silly addNameRange     '1.6.0',
+524 silly addNameRange     '1.6.1',
+524 silly addNameRange     '1.6.2',
+524 silly addNameRange     '1.6.3',
+524 silly addNameRange     '1.6.4',
+524 silly addNameRange     '1.6.5',
+524 silly addNameRange     '1.6.6',
+524 silly addNameRange     '1.7.0',
+524 silly addNameRange     '1.7.1',
+524 silly addNameRange     '1.7.2',
+524 silly addNameRange     '1.7.3',
+524 silly addNameRange     '1.8.0',
+524 silly addNameRange     '1.9.0',
+524 silly addNameRange     '1.9.1',
+524 silly addNameRange     '1.9.2',
+524 silly addNameRange     '1.9.3',
+524 silly addNameRange     '1.9.4',
+524 silly addNameRange     '1.10.0',
+524 silly addNameRange     '1.10.1',
+524 silly addNameRange     '1.10.2',
+524 silly addNameRange     '1.10.3',
+524 silly addNameRange     '1.10.4',
+524 silly addNameRange     '1.10.5',
+524 silly addNameRange     '1.10.6',
+524 silly addNameRange     '1.10.8',
+524 silly addNameRange     '1.10.9',
+524 silly addNameRange     '1.11.0',
+524 silly addNameRange     '2.0.0',
+524 silly addNameRange     '2.0.1',
+524 silly addNameRange     '2.0.2',
+524 silly addNameRange     '1.11.1',
+524 silly addNameRange     '2.0.3',
+524 silly addNameRange     '2.0.4',
+524 silly addNameRange     '2.0.5',
+524 silly addNameRange     '2.0.6',
+524 silly addNameRange     '1.11.2',
+524 silly addNameRange     '1.11.3' ] ]
+525 verbose addNamed [ 'q-io', '1.9.4' ]
+526 verbose addNamed [ '1.9.4', '1.9.4' ]
+527 silly lockFile c95e123c-q-io-1-9-4 q-io@1.9.4
+528 verbose lock q-io@1.9.4 /Users/chanon/.npm/c95e123c-q-io-1-9-4.lock
+529 silly addNameRange number 2 { name: 'tv4', range: '>=1.0.14-0 <1.1.0-0', hasData: true }
+530 silly addNameRange versions [ 'tv4',
+530 silly addNameRange   [ '1.0.0',
+530 silly addNameRange     '1.0.1',
+530 silly addNameRange     '1.0.2',
+530 silly addNameRange     '1.0.3',
+530 silly addNameRange     '1.0.4',
+530 silly addNameRange     '1.0.5',
+530 silly addNameRange     '1.0.6',
+530 silly addNameRange     '1.0.7',
+530 silly addNameRange     '1.0.8',
+530 silly addNameRange     '1.0.9',
+530 silly addNameRange     '1.0.10',
+530 silly addNameRange     '1.0.11',
+530 silly addNameRange     '1.0.13',
+530 silly addNameRange     '1.0.14',
+530 silly addNameRange     '1.0.15',
+530 silly addNameRange     '1.0.16',
+530 silly addNameRange     '1.0.17',
+530 silly addNameRange     '1.0.18',
+530 silly addNameRange     '1.1.0' ] ]
+531 verbose addNamed [ 'tv4', '1.0.18' ]
+532 verbose addNamed [ '1.0.18', '1.0.18' ]
+533 silly lockFile 14cf94e0-tv4-1-0-18 tv4@1.0.18
+534 verbose lock tv4@1.0.18 /Users/chanon/.npm/14cf94e0-tv4-1-0-18.lock
+535 http 304 https://registry.npmjs.org/tv4-reporter
+536 silly registry.get cb [ 304,
+536 silly registry.get   { date: 'Tue, 22 Jul 2014 09:10:38 GMT',
+536 silly registry.get     server: 'Apache',
+536 silly registry.get     via: '1.1 varnish',
+536 silly registry.get     'last-modified': 'Tue, 22 Jul 2014 09:10:38 GMT',
+536 silly registry.get     'cache-control': 'max-age=60',
+536 silly registry.get     etag: '"B0GJ29N8YZJ05F6LY4A9JM72J"',
+536 silly registry.get     'x-served-by': 'cache-sn89-SIN',
+536 silly registry.get     'x-cache': 'MISS',
+536 silly registry.get     'x-cache-hits': '0',
+536 silly registry.get     'x-timer': 'S1406020238.691979,VS0,VE245',
+536 silly registry.get     vary: 'Accept',
+536 silly registry.get     'content-length': '0',
+536 silly registry.get     'keep-alive': 'timeout=10, max=49',
+536 silly registry.get     connection: 'Keep-Alive' } ]
+537 verbose etag tv4-reporter from cache
+538 silly lockFile c95e123c-q-io-1-9-4 q-io@1.9.4
+539 silly lockFile c95e123c-q-io-1-9-4 q-io@1.9.4
+540 silly lockFile d232105b-q-io-1-9-4 q-io@~1.9.4
+541 silly lockFile d232105b-q-io-1-9-4 q-io@~1.9.4
+542 http 304 https://registry.npmjs.org/uri-templates/0.1.2
+543 silly registry.get cb [ 304,
+543 silly registry.get   { date: 'Tue, 22 Jul 2014 09:10:38 GMT',
+543 silly registry.get     server: 'Apache',
+543 silly registry.get     via: '1.1 varnish',
+543 silly registry.get     'last-modified': 'Tue, 22 Jul 2014 09:10:38 GMT',
+543 silly registry.get     'cache-control': 'max-age=60',
+543 silly registry.get     etag: '"5RK9EME0A13AU8Q0DYB9WA7V8"',
+543 silly registry.get     'x-served-by': 'cache-sn89-SIN',
+543 silly registry.get     'x-cache': 'HIT',
+543 silly registry.get     'x-cache-hits': '1',
+543 silly registry.get     'x-timer': 'S1406020238.697080,VS0,VE245',
+543 silly registry.get     vary: 'Accept',
+543 silly registry.get     'content-length': '0',
+543 silly registry.get     'keep-alive': 'timeout=10, max=49',
+543 silly registry.get     connection: 'Keep-Alive' } ]
+544 verbose etag uri-templates/0.1.2 from cache
+545 silly lockFile 14cf94e0-tv4-1-0-18 tv4@1.0.18
+546 silly lockFile 14cf94e0-tv4-1-0-18 tv4@1.0.18
+547 silly lockFile 37121859-tv4-1-0-14 tv4@~1.0.14
+548 silly lockFile 37121859-tv4-1-0-14 tv4@~1.0.14
+549 silly addNameRange number 2 { name: 'tv4-reporter',
+549 silly addNameRange   range: '>=0.0.4-0 <0.1.0-0',
+549 silly addNameRange   hasData: true }
+550 silly addNameRange versions [ 'tv4-reporter', [ '0.0.1', '0.0.2', '0.0.3', '0.0.4' ] ]
+551 verbose addNamed [ 'tv4-reporter', '0.0.4' ]
+552 verbose addNamed [ '0.0.4', '0.0.4' ]
+553 silly lockFile a7904f9c-tv4-reporter-0-0-4 tv4-reporter@0.0.4
+554 verbose lock tv4-reporter@0.0.4 /Users/chanon/.npm/a7904f9c-tv4-reporter-0-0-4.lock
+555 silly lockFile a7904f9c-tv4-reporter-0-0-4 tv4-reporter@0.0.4
+556 silly lockFile a7904f9c-tv4-reporter-0-0-4 tv4-reporter@0.0.4
+557 silly lockFile 8f810378-uri-templates-0-1-2 uri-templates@0.1.2
+558 silly lockFile 8f810378-uri-templates-0-1-2 uri-templates@0.1.2
+559 silly lockFile b6645691-tv4-reporter-0-0-4 tv4-reporter@~0.0.4
+560 silly lockFile b6645691-tv4-reporter-0-0-4 tv4-reporter@~0.0.4
+561 http 304 https://registry.npmjs.org/js-yaml
+562 silly registry.get cb [ 304,
+562 silly registry.get   { date: 'Tue, 22 Jul 2014 09:10:38 GMT',
+562 silly registry.get     server: 'Apache',
+562 silly registry.get     via: '1.1 varnish',
+562 silly registry.get     'last-modified': 'Tue, 22 Jul 2014 09:10:38 GMT',
+562 silly registry.get     'cache-control': 'max-age=60',
+562 silly registry.get     etag: '"A03O0MK0020IRZKHS2D5GM5TV"',
+562 silly registry.get     'x-served-by': 'cache-sn89-SIN',
+562 silly registry.get     'x-cache': 'HIT',
+562 silly registry.get     'x-cache-hits': '1',
+562 silly registry.get     'x-timer': 'S1406020238.996975,VS0,VE0',
+562 silly registry.get     vary: 'Accept',
+562 silly registry.get     'content-length': '0',
+562 silly registry.get     'keep-alive': 'timeout=10, max=48',
+562 silly registry.get     connection: 'Keep-Alive' } ]
+563 verbose etag js-yaml from cache
+564 silly addNameRange number 2 { name: 'js-yaml', range: '>=3.0.1-0 <3.1.0-0', hasData: true }
+565 silly addNameRange versions [ 'js-yaml',
+565 silly addNameRange   [ '0.2.0',
+565 silly addNameRange     '0.2.1',
+565 silly addNameRange     '0.2.2',
+565 silly addNameRange     '0.3.0',
+565 silly addNameRange     '0.3.1',
+565 silly addNameRange     '0.3.2',
+565 silly addNameRange     '0.3.3',
+565 silly addNameRange     '0.3.4',
+565 silly addNameRange     '0.3.5',
+565 silly addNameRange     '0.3.6',
+565 silly addNameRange     '0.3.7',
+565 silly addNameRange     '1.0.0',
+565 silly addNameRange     '1.0.1',
+565 silly addNameRange     '1.0.2',
+565 silly addNameRange     '1.0.3',
+565 silly addNameRange     '2.0.0',
+565 silly addNameRange     '2.0.1',
+565 silly addNameRange     '2.0.2',
+565 silly addNameRange     '2.0.3',
+565 silly addNameRange     '2.0.4',
+565 silly addNameRange     '2.0.5',
+565 silly addNameRange     '2.1.0',
+565 silly addNameRange     '2.1.1',
+565 silly addNameRange     '2.1.2',
+565 silly addNameRange     '2.1.3',
+565 silly addNameRange     '3.0.0',
+565 silly addNameRange     '3.0.1',
+565 silly addNameRange     '3.0.2',
+565 silly addNameRange     '3.1.0' ] ]
+566 verbose addNamed [ 'js-yaml', '3.0.2' ]
+567 verbose addNamed [ '3.0.2', '3.0.2' ]
+568 silly lockFile e0b3565c-js-yaml-3-0-2 js-yaml@3.0.2
+569 verbose lock js-yaml@3.0.2 /Users/chanon/.npm/e0b3565c-js-yaml-3-0-2.lock
+570 silly lockFile e0b3565c-js-yaml-3-0-2 js-yaml@3.0.2
+571 silly lockFile e0b3565c-js-yaml-3-0-2 js-yaml@3.0.2
+572 silly lockFile 48adea8c-js-yaml-3-0-1 js-yaml@~3.0.1
+573 silly lockFile 48adea8c-js-yaml-3-0-1 js-yaml@~3.0.1
+574 http 304 https://registry.npmjs.org/assertion-error/1.0.0
+575 silly registry.get cb [ 304,
+575 silly registry.get   { date: 'Tue, 22 Jul 2014 09:10:38 GMT',
+575 silly registry.get     server: 'Apache',
+575 silly registry.get     via: '1.1 varnish',
+575 silly registry.get     'last-modified': 'Tue, 22 Jul 2014 09:10:39 GMT',
+575 silly registry.get     'cache-control': 'max-age=60',
+575 silly registry.get     etag: '"2Y8TLV3KM2WAT0R8YRW4V9UOV"',
+575 silly registry.get     'x-served-by': 'cache-sn86-SIN',
+575 silly registry.get     'x-cache': 'HIT',
+575 silly registry.get     'x-cache-hits': '1',
+575 silly registry.get     'x-timer': 'S1406020238.947615,VS0,VE217',
+575 silly registry.get     vary: 'Accept',
+575 silly registry.get     'content-length': '0',
+575 silly registry.get     'keep-alive': 'timeout=10, max=49',
+575 silly registry.get     connection: 'Keep-Alive' } ]
+576 verbose etag assertion-error/1.0.0 from cache
+577 silly lockFile f5d03964-assertion-error-1-0-0 assertion-error@1.0.0
+578 silly lockFile f5d03964-assertion-error-1-0-0 assertion-error@1.0.0
+579 http 304 https://registry.npmjs.org/json-pointer
+580 silly registry.get cb [ 304,
+580 silly registry.get   { date: 'Tue, 22 Jul 2014 09:10:39 GMT',
+580 silly registry.get     server: 'Apache',
+580 silly registry.get     via: '1.1 varnish',
+580 silly registry.get     'last-modified': 'Tue, 22 Jul 2014 09:10:39 GMT',
+580 silly registry.get     'cache-control': 'max-age=60',
+580 silly registry.get     etag: '"E7FD71NRVH515M58ONWL5Y1LF"',
+580 silly registry.get     'x-served-by': 'cache-sn89-SIN',
+580 silly registry.get     'x-cache': 'HIT',
+580 silly registry.get     'x-cache-hits': '1',
+580 silly registry.get     'x-timer': 'S1406020239.006781,VS0,VE200',
+580 silly registry.get     vary: 'Accept',
+580 silly registry.get     'content-length': '0',
+580 silly registry.get     'keep-alive': 'timeout=10, max=48',
+580 silly registry.get     connection: 'Keep-Alive' } ]
+581 verbose etag json-pointer from cache
+582 silly addNameRange number 2 { name: 'json-pointer',
+582 silly addNameRange   range: '>=0.1.0-0 <0.2.0-0',
+582 silly addNameRange   hasData: true }
+583 silly addNameRange versions [ 'json-pointer', [ '0.0.2', '0.0.3', '0.0.4', '0.1.0' ] ]
+584 verbose addNamed [ 'json-pointer', '0.1.0' ]
+585 verbose addNamed [ '0.1.0', '0.1.0' ]
+586 silly lockFile 9b2a5a72-json-pointer-0-1-0 json-pointer@0.1.0
+587 verbose lock json-pointer@0.1.0 /Users/chanon/.npm/9b2a5a72-json-pointer-0-1-0.lock
+588 silly lockFile 9b2a5a72-json-pointer-0-1-0 json-pointer@0.1.0
+589 silly lockFile 9b2a5a72-json-pointer-0-1-0 json-pointer@0.1.0
+590 silly lockFile 1630aaf2-json-pointer-0-1-0 json-pointer@~0.1.0
+591 silly lockFile 1630aaf2-json-pointer-0-1-0 json-pointer@~0.1.0
+592 http 304 https://registry.npmjs.org/jsesc
+593 silly registry.get cb [ 304,
+593 silly registry.get   { date: 'Tue, 22 Jul 2014 09:10:38 GMT',
+593 silly registry.get     server: 'Apache',
+593 silly registry.get     via: '1.1 varnish',
+593 silly registry.get     'last-modified': 'Tue, 22 Jul 2014 09:10:39 GMT',
+593 silly registry.get     'cache-control': 'max-age=60',
+593 silly registry.get     etag: '"AF1N4PO0F9WRA4GCOSGL0W98P"',
+593 silly registry.get     'x-served-by': 'cache-sn88-SIN',
+593 silly registry.get     'x-cache': 'MISS',
+593 silly registry.get     'x-cache-hits': '0',
+593 silly registry.get     'x-timer': 'S1406020238.966990,VS0,VE263',
+593 silly registry.get     vary: 'Accept',
+593 silly registry.get     'content-length': '0',
+593 silly registry.get     'keep-alive': 'timeout=10, max=49',
+593 silly registry.get     connection: 'Keep-Alive' } ]
+594 verbose etag jsesc from cache
+595 silly addNameRange number 2 { name: 'jsesc', range: '>=0.4.3-0 <0.5.0-0', hasData: true }
+596 silly addNameRange versions [ 'jsesc', [ '0.3.0', '0.4.0', '0.4.1', '0.4.2', '0.4.3' ] ]
+597 verbose addNamed [ 'jsesc', '0.4.3' ]
+598 verbose addNamed [ '0.4.3', '0.4.3' ]
+599 silly lockFile e307e933-jsesc-0-4-3 jsesc@0.4.3
+600 verbose lock jsesc@0.4.3 /Users/chanon/.npm/e307e933-jsesc-0-4-3.lock
+601 silly lockFile e307e933-jsesc-0-4-3 jsesc@0.4.3
+602 silly lockFile e307e933-jsesc-0-4-3 jsesc@0.4.3
+603 silly lockFile 6eea1e8d-jsesc-0-4-3 jsesc@~0.4.3
+604 silly lockFile 6eea1e8d-jsesc-0-4-3 jsesc@~0.4.3
+605 http 304 https://registry.npmjs.org/minitable
+606 silly registry.get cb [ 304,
+606 silly registry.get   { date: 'Tue, 22 Jul 2014 09:10:39 GMT',
+606 silly registry.get     server: 'Apache',
+606 silly registry.get     via: '1.1 varnish',
+606 silly registry.get     'last-modified': 'Tue, 22 Jul 2014 09:10:39 GMT',
+606 silly registry.get     'cache-control': 'max-age=60',
+606 silly registry.get     etag: '"33PLOPNIJF86AE9VSX7V0ZD2I"',
+606 silly registry.get     'x-served-by': 'cache-sn89-SIN',
+606 silly registry.get     'x-cache': 'HIT',
+606 silly registry.get     'x-cache-hits': '1',
+606 silly registry.get     'x-timer': 'S1406020239.244610,VS0,VE255',
+606 silly registry.get     vary: 'Accept',
+606 silly registry.get     'content-length': '0',
+606 silly registry.get     'keep-alive': 'timeout=10, max=47',
+606 silly registry.get     connection: 'Keep-Alive' } ]
+607 verbose etag minitable from cache
+608 silly addNameRange number 2 { name: 'minitable', range: '>=0.0.2-0 <0.1.0-0', hasData: true }
+609 silly addNameRange versions [ 'minitable', [ '0.0.1', '0.0.3' ] ]
+610 verbose addNamed [ 'minitable', '0.0.3' ]
+611 verbose addNamed [ '0.0.3', '0.0.3' ]
+612 silly lockFile 0f47a9c6-minitable-0-0-3 minitable@0.0.3
+613 verbose lock minitable@0.0.3 /Users/chanon/.npm/0f47a9c6-minitable-0-0-3.lock
+614 silly lockFile 0f47a9c6-minitable-0-0-3 minitable@0.0.3
+615 silly lockFile 0f47a9c6-minitable-0-0-3 minitable@0.0.3
+616 silly lockFile 67c02929-minitable-0-0-2 minitable@~0.0.2
+617 silly lockFile 67c02929-minitable-0-0-2 minitable@~0.0.2
+618 http 304 https://registry.npmjs.org/es6-shim/0.9.1
+619 silly registry.get cb [ 304,
+619 silly registry.get   { date: 'Tue, 22 Jul 2014 09:10:39 GMT',
+619 silly registry.get     server: 'Apache',
+619 silly registry.get     via: '1.1 varnish',
+619 silly registry.get     'last-modified': 'Tue, 22 Jul 2014 09:10:39 GMT',
+619 silly registry.get     'cache-control': 'max-age=60',
+619 silly registry.get     etag: '"4ZKJCDK57KB5UONDKGU307SAE"',
+619 silly registry.get     'x-served-by': 'cache-sn88-SIN',
+619 silly registry.get     'x-cache': 'MISS',
+619 silly registry.get     'x-cache-hits': '0',
+619 silly registry.get     'x-timer': 'S1406020239.271753,VS0,VE263',
+619 silly registry.get     vary: 'Accept',
+619 silly registry.get     'content-length': '0',
+619 silly registry.get     'keep-alive': 'timeout=10, max=48',
+619 silly registry.get     connection: 'Keep-Alive' } ]
+620 verbose etag es6-shim/0.9.1 from cache
+621 http 304 https://registry.npmjs.org/request
+622 silly registry.get cb [ 304,
+622 silly registry.get   { date: 'Tue, 22 Jul 2014 09:10:39 GMT',
+622 silly registry.get     server: 'Apache',
+622 silly registry.get     via: '1.1 varnish',
+622 silly registry.get     'last-modified': 'Tue, 22 Jul 2014 09:10:25 GMT',
+622 silly registry.get     'cache-control': 'max-age=60',
+622 silly registry.get     etag: '"1DX53ZO2NSMSDL8AVIJRJYFTT"',
+622 silly registry.get     'x-served-by': 'cache-sn89-SIN',
+622 silly registry.get     'x-cache': 'HIT',
+622 silly registry.get     'x-cache-hits': '2',
+622 silly registry.get     'x-timer': 'S1406020239.539855,VS0,VE0',
+622 silly registry.get     vary: 'Accept',
+622 silly registry.get     'content-length': '0',
+622 silly registry.get     'keep-alive': 'timeout=10, max=46',
+622 silly registry.get     connection: 'Keep-Alive' } ]
+623 verbose etag request from cache
+624 silly lockFile a136f937-es6-shim-0-9-1 es6-shim@0.9.1
+625 silly lockFile a136f937-es6-shim-0-9-1 es6-shim@0.9.1
+626 silly addNameRange number 2 { name: 'request', range: '>=2.33.0-0 <2.34.0-0', hasData: true }
+627 silly addNameRange versions [ 'request',
+627 silly addNameRange   [ '0.10.0',
+627 silly addNameRange     '0.8.3',
+627 silly addNameRange     '0.9.0',
+627 silly addNameRange     '0.9.1',
+627 silly addNameRange     '0.9.5',
+627 silly addNameRange     '1.0.0',
+627 silly addNameRange     '1.1.0',
+627 silly addNameRange     '1.1.1',
+627 silly addNameRange     '1.2.0',
+627 silly addNameRange     '1.9.0',
+627 silly addNameRange     '1.9.1',
+627 silly addNameRange     '1.9.2',
+627 silly addNameRange     '1.9.3',
+627 silly addNameRange     '1.9.5',
+627 silly addNameRange     '1.9.7',
+627 silly addNameRange     '1.9.8',
+627 silly addNameRange     '1.9.9',
+627 silly addNameRange     '2.0.0',
+627 silly addNameRange     '2.0.1',
+627 silly addNameRange     '2.0.2',
+627 silly addNameRange     '2.0.3',
+627 silly addNameRange     '2.0.4',
+627 silly addNameRange     '2.0.5',
+627 silly addNameRange     '2.1.0',
+627 silly addNameRange     '2.1.1',
+627 silly addNameRange     '2.2.0',
+627 silly addNameRange     '2.2.5',
+627 silly addNameRange     '2.2.6',
+627 silly addNameRange     '2.2.9',
+627 silly addNameRange     '2.9.0',
+627 silly addNameRange     '2.9.1',
+627 silly addNameRange     '2.9.2',
+627 silly addNameRange     '2.9.3',
+627 silly addNameRange     '2.9.100',
+627 silly addNameRange     '2.9.150',
+627 silly addNameRange     '2.9.151',
+627 silly addNameRange     '2.9.152',
+627 silly addNameRange     '2.9.153',
+627 silly addNameRange     '2.9.200',
+627 silly addNameRange     '2.9.201',
+627 silly addNameRange     '2.9.202',
+627 silly addNameRange     '2.9.203',
+627 silly addNameRange     '2.10.0',
+627 silly addNameRange     '2.11.0',
+627 silly addNameRange     '2.11.1',
+627 silly addNameRange     '2.11.2',
+627 silly addNameRange     '2.11.3',
+627 silly addNameRange     '2.11.4',
+627 silly addNameRange     '2.12.0',
+627 silly addNameRange     '2.14.0',
+627 silly addNameRange     '2.16.0',
+627 silly addNameRange     '2.16.2',
+627 silly addNameRange     '2.16.4',
+627 silly addNameRange     '2.16.6',
+627 silly addNameRange     '2.18.0',
+627 silly addNameRange     '2.19.0',
+627 silly addNameRange     '2.20.0',
+627 silly addNameRange     '2.21.0',
+627 silly addNameRange     '2.22.0',
+627 silly addNameRange     '2.23.0',
+627 silly addNameRange     '2.24.0',
+627 silly addNameRange     '2.25.0',
+627 silly addNameRange     '2.26.0',
+627 silly addNameRange     '2.27.0',
+627 silly addNameRange     '2.28.0',
+627 silly addNameRange     '2.29.0',
+627 silly addNameRange     '2.30.0',
+627 silly addNameRange     '2.31.0',
+627 silly addNameRange     '2.32.0',
+627 silly addNameRange     '2.33.0',
+627 silly addNameRange     '2.34.0',
+627 silly addNameRange     '2.35.0',
+627 silly addNameRange     '2.36.0',
+627 silly addNameRange     '2.37.0' ] ]
+628 verbose addNamed [ 'request', '2.33.0' ]
+629 verbose addNamed [ '2.33.0', '2.33.0' ]
+630 silly lockFile 6f7b4c4d-request-2-33-0 request@2.33.0
+631 verbose lock request@2.33.0 /Users/chanon/.npm/6f7b4c4d-request-2-33-0.lock
+632 silly lockFile 6f7b4c4d-request-2-33-0 request@2.33.0
+633 silly lockFile 6f7b4c4d-request-2-33-0 request@2.33.0
+634 silly lockFile bc831a1d-request-2-33-0 request@~2.33.0
+635 silly lockFile bc831a1d-request-2-33-0 request@~2.33.0
+636 http 304 https://registry.npmjs.org/event-stream
+637 silly registry.get cb [ 304,
+637 silly registry.get   { date: 'Tue, 22 Jul 2014 09:10:39 GMT',
+637 silly registry.get     server: 'Apache',
+637 silly registry.get     via: '1.1 varnish',
+637 silly registry.get     'last-modified': 'Tue, 22 Jul 2014 09:08:34 GMT',
+637 silly registry.get     'cache-control': 'max-age=60',
+637 silly registry.get     etag: '"1LTSFZQGCVNPJNUH1SKQDZNRE"',
+637 silly registry.get     'x-served-by': 'cache-sn88-SIN',
+637 silly registry.get     'x-cache': 'HIT',
+637 silly registry.get     'x-cache-hits': '2',
+637 silly registry.get     'x-timer': 'S1406020239.573002,VS0,VE0',
+637 silly registry.get     vary: 'Accept',
+637 silly registry.get     'content-length': '0',
+637 silly registry.get     'keep-alive': 'timeout=10, max=47',
+637 silly registry.get     connection: 'Keep-Alive' } ]
+638 verbose etag event-stream from cache
+639 silly addNameRange number 2 { name: 'event-stream',
+639 silly addNameRange   range: '>=3.1.0-0 <3.2.0-0',
+639 silly addNameRange   hasData: true }
+640 silly addNameRange versions [ 'event-stream',
+640 silly addNameRange   [ '0.1.0',
+640 silly addNameRange     '0.2.0',
+640 silly addNameRange     '0.2.1',
+640 silly addNameRange     '0.3.0',
+640 silly addNameRange     '0.4.0',
+640 silly addNameRange     '0.5.0',
+640 silly addNameRange     '0.5.1',
+640 silly addNameRange     '0.5.2',
+640 silly addNameRange     '0.5.3',
+640 silly addNameRange     '0.6.0',
+640 silly addNameRange     '0.7.0',
+640 silly addNameRange     '0.8.0',
+640 silly addNameRange     '0.8.1',
+640 silly addNameRange     '0.8.2',
+640 silly addNameRange     '0.9.0',
+640 silly addNameRange     '0.9.1',
+640 silly addNameRange     '0.9.2',
+640 silly addNameRange     '0.9.3',
+640 silly addNameRange     '0.9.4',
+640 silly addNameRange     '0.9.6',
+640 silly addNameRange     '0.9.7',
+640 silly addNameRange     '0.9.8',
+640 silly addNameRange     '0.10.0',
+640 silly addNameRange     '1.0.0',
+640 silly addNameRange     '1.1.0',
+640 silly addNameRange     '1.2.0',
+640 silly addNameRange     '1.3.0',
+640 silly addNameRange     '1.3.1',
+640 silly addNameRange     '2.0.0',
+640 silly addNameRange     '2.0.1',
+640 silly addNameRange     '2.0.2',
+640 silly addNameRange     '2.0.3',
+640 silly addNameRange     '2.0.4',
+640 silly addNameRange     '2.0.9',
+640 silly addNameRange     '2.0.10',
+640 silly addNameRange     '2.1.0',
+640 silly addNameRange     '2.1.2',
+640 silly addNameRange     '2.1.3',
+640 silly addNameRange     '2.1.4',
+640 silly addNameRange     '2.1.5',
+640 silly addNameRange     '2.1.7',
+640 silly addNameRange     '2.1.8',
+640 silly addNameRange     '2.1.9',
+640 silly addNameRange     '2.2.0',
+640 silly addNameRange     '2.2.1',
+640 silly addNameRange     '2.2.2',
+640 silly addNameRange     '2.2.3',
+640 silly addNameRange     '3.0.0',
+640 silly addNameRange     '3.0.1',
+640 silly addNameRange     '3.0.2',
+640 silly addNameRange     '3.0.3',
+640 silly addNameRange     '3.0.4',
+640 silly addNameRange     '3.0.5',
+640 silly addNameRange     '3.0.6',
+640 silly addNameRange     '3.0.7',
+640 silly addNameRange     '3.0.8',
+640 silly addNameRange     '3.0.9',
+640 silly addNameRange     '3.0.10',
+640 silly addNameRange     '3.0.11',
+640 silly addNameRange     '3.0.12',
+640 silly addNameRange     '3.0.13',
+640 silly addNameRange     '3.0.14',
+640 silly addNameRange     '3.0.15',
+640 silly addNameRange     '3.0.16',
+640 silly addNameRange     '3.0.17',
+640 silly addNameRange     '3.0.18',
+640 silly addNameRange     '3.0.20',
+640 silly addNameRange     '3.1.0',
+640 silly addNameRange     '3.1.1',
+640 silly addNameRange     '3.1.2',
+640 silly addNameRange     '3.1.4',
+640 silly addNameRange     '3.1.5',
+640 silly addNameRange     '3.1.7' ] ]
+641 verbose addNamed [ 'event-stream', '3.1.7' ]
+642 verbose addNamed [ '3.1.7', '3.1.7' ]
+643 silly lockFile bad164d3-event-stream-3-1-7 event-stream@3.1.7
+644 verbose lock event-stream@3.1.7 /Users/chanon/.npm/bad164d3-event-stream-3-1-7.lock
+645 silly lockFile bad164d3-event-stream-3-1-7 event-stream@3.1.7
+646 silly lockFile bad164d3-event-stream-3-1-7 event-stream@3.1.7
+647 silly lockFile 98d1a8ea-event-stream-3-1-0 event-stream@~3.1.0
+648 silly lockFile 98d1a8ea-event-stream-3-1-0 event-stream@~3.1.0
+649 http 304 https://registry.npmjs.org/minimist/0.0.7
+650 silly registry.get cb [ 304,
+650 silly registry.get   { date: 'Tue, 22 Jul 2014 09:10:38 GMT',
+650 silly registry.get     server: 'Apache',
+650 silly registry.get     via: '1.1 varnish',
+650 silly registry.get     'last-modified': 'Tue, 22 Jul 2014 09:10:39 GMT',
+650 silly registry.get     'cache-control': 'max-age=60',
+650 silly registry.get     etag: '"69KK13IWXCX7XELJPTNT2R7QS"',
+650 silly registry.get     'x-served-by': 'cache-sn87-SIN',
+650 silly registry.get     'x-cache': 'HIT',
+650 silly registry.get     'x-cache-hits': '1',
+650 silly registry.get     'x-timer': 'S1406020238.726449,VS0,VE1000',
+650 silly registry.get     vary: 'Accept',
+650 silly registry.get     'content-length': '0',
+650 silly registry.get     'keep-alive': 'timeout=10, max=48',
+650 silly registry.get     connection: 'Keep-Alive' } ]
+651 verbose etag minimist/0.0.7 from cache
+652 silly lockFile 02a0b287-minimist-0-0-7 minimist@0.0.7
+653 silly lockFile 02a0b287-minimist-0-0-7 minimist@0.0.7
+654 http 304 https://registry.npmjs.org/uuid
+655 silly registry.get cb [ 304,
+655 silly registry.get   { date: 'Tue, 22 Jul 2014 09:10:39 GMT',
+655 silly registry.get     server: 'Apache',
+655 silly registry.get     via: '1.1 varnish',
+655 silly registry.get     'last-modified': 'Tue, 22 Jul 2014 09:10:39 GMT',
+655 silly registry.get     'cache-control': 'max-age=60',
+655 silly registry.get     etag: '"CAVTKQJ6L8C1AVGCRASCOK8H3"',
+655 silly registry.get     'x-served-by': 'cache-sn87-SIN',
+655 silly registry.get     'x-cache': 'HIT',
+655 silly registry.get     'x-cache-hits': '1',
+655 silly registry.get     'x-timer': 'S1406020239.764998,VS0,VE0',
+655 silly registry.get     vary: 'Accept',
+655 silly registry.get     'content-length': '0',
+655 silly registry.get     'keep-alive': 'timeout=10, max=47',
+655 silly registry.get     connection: 'Keep-Alive' } ]
+656 verbose etag uuid from cache
+657 silly addNameRange number 2 { name: 'uuid', range: '>=1.4.1-0 <1.5.0-0', hasData: true }
+658 silly addNameRange versions [ 'uuid', [ '0.0.1', '0.0.2', '1.4.0', '1.4.1' ] ]
+659 verbose addNamed [ 'uuid', '1.4.1' ]
+660 verbose addNamed [ '1.4.1', '1.4.1' ]
+661 silly lockFile 0ac31546-uuid-1-4-1 uuid@1.4.1
+662 verbose lock uuid@1.4.1 /Users/chanon/.npm/0ac31546-uuid-1-4-1.lock
+663 silly lockFile 0ac31546-uuid-1-4-1 uuid@1.4.1
+664 silly lockFile 0ac31546-uuid-1-4-1 uuid@1.4.1
+665 silly lockFile bc91a07e-uuid-1-4-1 uuid@~1.4.1
+666 silly lockFile bc91a07e-uuid-1-4-1 uuid@~1.4.1
+667 http 304 https://registry.npmjs.org/ministyle
+668 silly registry.get cb [ 304,
+668 silly registry.get   { date: 'Tue, 22 Jul 2014 09:10:39 GMT',
+668 silly registry.get     server: 'Apache',
+668 silly registry.get     via: '1.1 varnish',
+668 silly registry.get     'last-modified': 'Tue, 22 Jul 2014 09:10:39 GMT',
+668 silly registry.get     'cache-control': 'max-age=60',
+668 silly registry.get     etag: '"A3WF4X7QU13BF7I1KN66RP6J9"',
+668 silly registry.get     'x-served-by': 'cache-sn89-SIN',
+668 silly registry.get     'x-cache': 'HIT',
+668 silly registry.get     'x-cache-hits': '1',
+668 silly registry.get     'x-timer': 'S1406020239.039976,VS0,VE814',
+668 silly registry.get     vary: 'Accept',
+668 silly registry.get     'content-length': '0',
+668 silly registry.get     'keep-alive': 'timeout=10, max=47',
+668 silly registry.get     connection: 'Keep-Alive' } ]
+669 verbose etag ministyle from cache
+670 silly addNameRange number 2 { name: 'ministyle', range: '>=0.1.3-0 <0.2.0-0', hasData: true }
+671 silly addNameRange versions [ 'ministyle', [ '0.1.0', '0.1.1', '0.1.2', '0.1.3', '0.1.4' ] ]
+672 verbose addNamed [ 'ministyle', '0.1.4' ]
+673 verbose addNamed [ '0.1.4', '0.1.4' ]
+674 silly lockFile 96eef620-ministyle-0-1-4 ministyle@0.1.4
+675 verbose lock ministyle@0.1.4 /Users/chanon/.npm/96eef620-ministyle-0-1-4.lock
+676 silly lockFile 96eef620-ministyle-0-1-4 ministyle@0.1.4
+677 silly lockFile 96eef620-ministyle-0-1-4 ministyle@0.1.4
+678 silly lockFile 33b2259b-ministyle-0-1-3 ministyle@~0.1.3
+679 silly lockFile 33b2259b-ministyle-0-1-3 ministyle@~0.1.3
+680 http 304 https://registry.npmjs.org/weak-map
+681 silly registry.get cb [ 304,
+681 silly registry.get   { date: 'Tue, 22 Jul 2014 09:10:39 GMT',
+681 silly registry.get     server: 'Apache',
+681 silly registry.get     via: '1.1 varnish',
+681 silly registry.get     'last-modified': 'Tue, 22 Jul 2014 09:10:40 GMT',
+681 silly registry.get     'cache-control': 'max-age=60',
+681 silly registry.get     etag: '"BCTWDIK1QIYHE3MNSVC3ES58Q"',
+681 silly registry.get     'x-served-by': 'cache-sn87-SIN',
+681 silly registry.get     'x-cache': 'MISS',
+681 silly registry.get     'x-cache-hits': '0',
+681 silly registry.get     'x-timer': 'S1406020239.802618,VS0,VE251',
+681 silly registry.get     vary: 'Accept',
+681 silly registry.get     'content-length': '0',
+681 silly registry.get     'keep-alive': 'timeout=10, max=46',
+681 silly registry.get     connection: 'Keep-Alive' } ]
+682 verbose etag weak-map from cache
+683 silly addNameRange number 2 { name: 'weak-map', range: '>=1.0.3-0 <1.1.0-0', hasData: true }
+684 silly addNameRange versions [ 'weak-map',
+684 silly addNameRange   [ '1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5' ] ]
+685 verbose addNamed [ 'weak-map', '1.0.5' ]
+686 verbose addNamed [ '1.0.5', '1.0.5' ]
+687 silly lockFile b94c6969-weak-map-1-0-5 weak-map@1.0.5
+688 verbose lock weak-map@1.0.5 /Users/chanon/.npm/b94c6969-weak-map-1-0-5.lock
+689 silly lockFile b94c6969-weak-map-1-0-5 weak-map@1.0.5
+690 silly lockFile b94c6969-weak-map-1-0-5 weak-map@1.0.5
+691 silly lockFile cfb82fcc-weak-map-1-0-3 weak-map@~1.0.3
+692 silly lockFile cfb82fcc-weak-map-1-0-3 weak-map@~1.0.3
+693 http 304 https://registry.npmjs.org/detect-indent
+694 silly registry.get cb [ 304,
+694 silly registry.get   { date: 'Tue, 22 Jul 2014 09:10:39 GMT',
+694 silly registry.get     server: 'Apache',
+694 silly registry.get     via: '1.1 varnish',
+694 silly registry.get     'last-modified': 'Tue, 22 Jul 2014 09:10:40 GMT',
+694 silly registry.get     'cache-control': 'max-age=60',
+694 silly registry.get     etag: '"CPP8MDNCAL6AFSUE2C021PBI5"',
+694 silly registry.get     'x-served-by': 'cache-sn89-SIN',
+694 silly registry.get     'x-cache': 'MISS',
+694 silly registry.get     'x-cache-hits': '0',
+694 silly registry.get     'x-timer': 'S1406020239.893127,VS0,VE197',
+694 silly registry.get     vary: 'Accept',
+694 silly registry.get     'content-length': '0',
+694 silly registry.get     'keep-alive': 'timeout=10, max=46',
+694 silly registry.get     connection: 'Keep-Alive' } ]
+695 verbose etag detect-indent from cache
+696 http 304 https://registry.npmjs.org/q
+697 silly registry.get cb [ 304,
+697 silly registry.get   { date: 'Tue, 22 Jul 2014 09:10:40 GMT',
+697 silly registry.get     server: 'Apache',
+697 silly registry.get     via: '1.1 varnish',
+697 silly registry.get     'last-modified': 'Tue, 22 Jul 2014 09:10:40 GMT',
+697 silly registry.get     'cache-control': 'max-age=60',
+697 silly registry.get     etag: '"ECE4IGL2CA3L4Y9PM3BL9SSH4"',
+697 silly registry.get     'x-served-by': 'cache-sn87-SIN',
+697 silly registry.get     'x-cache': 'HIT',
+697 silly registry.get     'x-cache-hits': '1',
+697 silly registry.get     'x-timer': 'S1406020240.092421,VS0,VE0',
+697 silly registry.get     vary: 'Accept',
+697 silly registry.get     'content-length': '0',
+697 silly registry.get     'keep-alive': 'timeout=10, max=45',
+697 silly registry.get     connection: 'Keep-Alive' } ]
+698 verbose etag q from cache
+699 silly addNameRange number 2 { name: 'detect-indent',
+699 silly addNameRange   range: '>=0.1.3-0 <0.2.0-0',
+699 silly addNameRange   hasData: true }
+700 silly addNameRange versions [ 'detect-indent',
+700 silly addNameRange   [ '0.1.0', '0.1.1', '0.1.2', '0.1.3', '0.1.4', '0.2.0' ] ]
+701 verbose addNamed [ 'detect-indent', '0.1.4' ]
+702 verbose addNamed [ '0.1.4', '0.1.4' ]
+703 silly lockFile ca3c3204-detect-indent-0-1-4 detect-indent@0.1.4
+704 verbose lock detect-indent@0.1.4 /Users/chanon/.npm/ca3c3204-detect-indent-0-1-4.lock
+705 silly addNameRange number 2 { name: 'q', range: '>=0.9.7-0 <0.10.0-0', hasData: true }
+706 silly addNameRange versions [ 'q',
+706 silly addNameRange   [ '0.0.0',
+706 silly addNameRange     '0.0.1',
+706 silly addNameRange     '0.0.2',
+706 silly addNameRange     '0.0.3',
+706 silly addNameRange     '0.1.0',
+706 silly addNameRange     '0.1.1',
+706 silly addNameRange     '0.1.2',
+706 silly addNameRange     '0.1.3',
+706 silly addNameRange     '0.1.4',
+706 silly addNameRange     '0.1.5',
+706 silly addNameRange     '0.1.6',
+706 silly addNameRange     '0.1.7',
+706 silly addNameRange     '0.1.8',
+706 silly addNameRange     '0.1.9',
+706 silly addNameRange     '0.2.0-rc1',
+706 silly addNameRange     '0.2.0',
+706 silly addNameRange     '0.2.1',
+706 silly addNameRange     '0.2.2',
+706 silly addNameRange     '0.2.3',
+706 silly addNameRange     '0.2.4',
+706 silly addNameRange     '0.2.5',
+706 silly addNameRange     '0.2.6',
+706 silly addNameRange     '0.2.7',
+706 silly addNameRange     '0.2.8',
+706 silly addNameRange     '0.2.9',
+706 silly addNameRange     '0.3.0',
+706 silly addNameRange     '0.2.10',
+706 silly addNameRange     '0.4.0',
+706 silly addNameRange     '0.4.1',
+706 silly addNameRange     '0.4.2',
+706 silly addNameRange     '0.4.4',
+706 silly addNameRange     '0.5.0',
+706 silly addNameRange     '0.5.1',
+706 silly addNameRange     '0.5.2',
+706 silly addNameRange     '0.5.3',
+706 silly addNameRange     '0.6.0',
+706 silly addNameRange     '0.7.0',
+706 silly addNameRange     '0.7.1',
+706 silly addNameRange     '0.7.2',
+706 silly addNameRange     '0.8.0',
+706 silly addNameRange     '0.8.1',
+706 silly addNameRange     '0.8.2',
+706 silly addNameRange     '0.8.3',
+706 silly addNameRange     '0.8.4',
+706 silly addNameRange     '0.8.5',
+706 silly addNameRange     '0.8.6',
+706 silly addNameRange     '0.8.7',
+706 silly addNameRange     '0.8.8',
+706 silly addNameRange     '0.8.9',
+706 silly addNameRange     '0.8.10',
+706 silly addNameRange     '0.8.11',
+706 silly addNameRange     '0.8.12',
+706 silly addNameRange     '0.9.0',
+706 silly addNameRange     '0.9.1',
+706 silly addNameRange     '0.9.2',
+706 silly addNameRange     '0.9.3',
+706 silly addNameRange     '0.9.4',
+706 silly addNameRange     '0.9.5',
+706 silly addNameRange     '0.9.6',
+706 silly addNameRange     '0.9.7',
+706 silly addNameRange     '1.0.0',
+706 silly addNameRange     '1.0.1',
+706 silly addNameRange     '2.0.0',
+706 silly addNameRange     '2.0.1',
+706 silly addNameRange     '2.0.2' ] ]
+707 verbose addNamed [ 'q', '0.9.7' ]
+708 verbose addNamed [ '0.9.7', '0.9.7' ]
+709 silly lockFile cc8e51ee-q-0-9-7 q@0.9.7
+710 verbose lock q@0.9.7 /Users/chanon/.npm/cc8e51ee-q-0-9-7.lock
+711 silly lockFile ca3c3204-detect-indent-0-1-4 detect-indent@0.1.4
+712 silly lockFile ca3c3204-detect-indent-0-1-4 detect-indent@0.1.4
+713 silly lockFile cc8e51ee-q-0-9-7 q@0.9.7
+714 silly lockFile cc8e51ee-q-0-9-7 q@0.9.7
+715 silly lockFile 41bc8309-detect-indent-0-1-3 detect-indent@~0.1.3
+716 silly lockFile 41bc8309-detect-indent-0-1-3 detect-indent@~0.1.3
+717 silly lockFile 9ea2316a-q-0-9-7 q@~0.9.7
+718 silly lockFile 9ea2316a-q-0-9-7 q@~0.9.7
+719 http 304 https://registry.npmjs.org/miniwrite
+720 silly registry.get cb [ 304,
+720 silly registry.get   { date: 'Tue, 22 Jul 2014 09:10:39 GMT',
+720 silly registry.get     server: 'Apache',
+720 silly registry.get     via: '1.1 varnish',
+720 silly registry.get     'last-modified': 'Tue, 22 Jul 2014 09:10:40 GMT',
+720 silly registry.get     'cache-control': 'max-age=60',
+720 silly registry.get     etag: '"BM1BUYY16UZLSUTUTQDGGNKRT"',
+720 silly registry.get     'x-served-by': 'cache-sn86-SIN',
+720 silly registry.get     'x-cache': 'MISS',
+720 silly registry.get     'x-cache-hits': '0',
+720 silly registry.get     'x-timer': 'S1406020239.203795,VS0,VE1052',
+720 silly registry.get     vary: 'Accept',
+720 silly registry.get     'content-length': '0',
+720 silly registry.get     'keep-alive': 'timeout=10, max=48',
+720 silly registry.get     connection: 'Keep-Alive' } ]
+721 verbose etag miniwrite from cache
+722 silly addNameRange number 2 { name: 'miniwrite', range: '>=0.1.3-0 <0.2.0-0', hasData: true }
+723 silly addNameRange versions [ 'miniwrite', [ '0.1.0', '0.1.1', '0.1.2', '0.1.3' ] ]
+724 verbose addNamed [ 'miniwrite', '0.1.3' ]
+725 verbose addNamed [ '0.1.3', '0.1.3' ]
+726 silly lockFile 40ff4d44-miniwrite-0-1-3 miniwrite@0.1.3
+727 verbose lock miniwrite@0.1.3 /Users/chanon/.npm/40ff4d44-miniwrite-0-1-3.lock
+728 silly lockFile 40ff4d44-miniwrite-0-1-3 miniwrite@0.1.3
+729 silly lockFile 40ff4d44-miniwrite-0-1-3 miniwrite@0.1.3
+730 silly lockFile 0cbc2735-miniwrite-0-1-3 miniwrite@~0.1.3
+731 silly lockFile 0cbc2735-miniwrite-0-1-3 miniwrite@~0.1.3
+732 http 304 https://registry.npmjs.org/universal-analytics
+733 silly registry.get cb [ 304,
+733 silly registry.get   { date: 'Tue, 22 Jul 2014 09:10:39 GMT',
+733 silly registry.get     server: 'Apache',
+733 silly registry.get     via: '1.1 varnish',
+733 silly registry.get     'last-modified': 'Tue, 22 Jul 2014 09:10:40 GMT',
+733 silly registry.get     'cache-control': 'max-age=60',
+733 silly registry.get     etag: '"AFHGGBUFH9C92ZNY3T110LWQ3"',
+733 silly registry.get     'x-served-by': 'cache-sn88-SIN',
+733 silly registry.get     'x-cache': 'MISS',
+733 silly registry.get     'x-cache-hits': '0',
+733 silly registry.get     'x-timer': 'S1406020239.609641,VS0,VE872',
+733 silly registry.get     vary: 'Accept',
+733 silly registry.get     'content-length': '0',
+733 silly registry.get     'keep-alive': 'timeout=10, max=46',
+733 silly registry.get     connection: 'Keep-Alive' } ]
+734 verbose etag universal-analytics from cache
+735 silly addNameRange number 2 { name: 'universal-analytics',
+735 silly addNameRange   range: '>=0.3.2-0 <0.4.0-0',
+735 silly addNameRange   hasData: true }
+736 silly addNameRange versions [ 'universal-analytics',
+736 silly addNameRange   [ '0.1.0',
+736 silly addNameRange     '0.1.1',
+736 silly addNameRange     '0.1.2',
+736 silly addNameRange     '0.1.3',
+736 silly addNameRange     '0.2.0',
+736 silly addNameRange     '0.2.1',
+736 silly addNameRange     '0.2.2',
+736 silly addNameRange     '0.2.3',
+736 silly addNameRange     '0.3.0',
+736 silly addNameRange     '0.3.1',
+736 silly addNameRange     '0.3.2',
+736 silly addNameRange     '0.3.3',
+736 silly addNameRange     '0.3.4' ] ]
+737 verbose addNamed [ 'universal-analytics', '0.3.4' ]
+738 verbose addNamed [ '0.3.4', '0.3.4' ]
+739 silly lockFile 83d5dd8d-universal-analytics-0-3-4 universal-analytics@0.3.4
+740 verbose lock universal-analytics@0.3.4 /Users/chanon/.npm/83d5dd8d-universal-analytics-0-3-4.lock
+741 silly lockFile 83d5dd8d-universal-analytics-0-3-4 universal-analytics@0.3.4
+742 silly lockFile 83d5dd8d-universal-analytics-0-3-4 universal-analytics@0.3.4
+743 silly lockFile 583e0530-universal-analytics-0-3-2 universal-analytics@~0.3.2
+744 silly lockFile 583e0530-universal-analytics-0-3-2 universal-analytics@~0.3.2
+745 http 304 https://registry.npmjs.org/bufferstream
+746 silly registry.get cb [ 304,
+746 silly registry.get   { date: 'Tue, 22 Jul 2014 09:10:39 GMT',
+746 silly registry.get     server: 'Apache',
+746 silly registry.get     via: '1.1 varnish',
+746 silly registry.get     'last-modified': 'Tue, 22 Jul 2014 09:10:40 GMT',
+746 silly registry.get     'cache-control': 'max-age=60',
+746 silly registry.get     etag: '"BKTPHLGHPR2NRAO8DJV1XQJK9"',
+746 silly registry.get     'x-served-by': 'cache-sn89-SIN',
+746 silly registry.get     'x-cache': 'MISS',
+746 silly registry.get     'x-cache-hits': '0',
+746 silly registry.get     'x-timer': 'S1406020239.578330,VS0,VE1009',
+746 silly registry.get     vary: 'Accept',
+746 silly registry.get     'content-length': '0',
+746 silly registry.get     'keep-alive': 'timeout=10, max=45',
+746 silly registry.get     connection: 'Keep-Alive' } ]
+747 verbose etag bufferstream from cache
+748 silly addNameRange number 2 { name: 'bufferstream',
+748 silly addNameRange   range: '>=0.6.2-0 <0.7.0-0',
+748 silly addNameRange   hasData: true }
+749 silly addNameRange versions [ 'bufferstream',
+749 silly addNameRange   [ '0.0.2',
+749 silly addNameRange     '0.0.3',
+749 silly addNameRange     '0.1.0',
+749 silly addNameRange     '0.1.1',
+749 silly addNameRange     '0.1.2',
+749 silly addNameRange     '0.1.2-1',
+749 silly addNameRange     '0.1.2-2',
+749 silly addNameRange     '0.1.2-3',
+749 silly addNameRange     '0.1.2-4',
+749 silly addNameRange     '0.1.2-5',
+749 silly addNameRange     '0.1.2-6',
+749 silly addNameRange     '0.1.3',
+749 silly addNameRange     '0.1.4',
+749 silly addNameRange     '0.1.5',
+749 silly addNameRange     '0.1.6',
+749 silly addNameRange     '0.2.0',
+749 silly addNameRange     '0.3.0',
+749 silly addNameRange     '0.4.0',
+749 silly addNameRange     '0.4.1',
+749 silly addNameRange     '0.4.2',
+749 silly addNameRange     '0.4.3',
+749 silly addNameRange     '0.4.4',
+749 silly addNameRange     '0.4.5',
+749 silly addNameRange     '0.4.6',
+749 silly addNameRange     '0.4.7',
+749 silly addNameRange     '0.4.8',
+749 silly addNameRange     '0.4.9',
+749 silly addNameRange     '0.4.10',
+749 silly addNameRange     '0.5.0-pre',
+749 silly addNameRange     '0.5.0-pre2',
+749 silly addNameRange     '0.5.0',
+749 silly addNameRange     '0.5.1',
+749 silly addNameRange     '0.5.2',
+749 silly addNameRange     '0.6.0',
+749 silly addNameRange     '0.6.1',
+749 silly addNameRange     '0.6.2' ] ]
+750 verbose addNamed [ 'bufferstream', '0.6.2' ]
+751 verbose addNamed [ '0.6.2', '0.6.2' ]
+752 silly lockFile cc4348ff-bufferstream-0-6-2 bufferstream@0.6.2
+753 verbose lock bufferstream@0.6.2 /Users/chanon/.npm/cc4348ff-bufferstream-0-6-2.lock
+754 silly lockFile cc4348ff-bufferstream-0-6-2 bufferstream@0.6.2
+755 silly lockFile cc4348ff-bufferstream-0-6-2 bufferstream@0.6.2
+756 silly lockFile c616727d-bufferstream-0-6-2 bufferstream@~0.6.2
+757 silly lockFile c616727d-bufferstream-0-6-2 bufferstream@~0.6.2
+758 verbose addRemoteGit [ 'git://github.com/Bartvds/update-notifier/', 'fix/fork' ]
+759 error git clone git://github.com/Bartvds/update-notifier/ Cloning into bare repository '/Users/chanon/.npm/_git-remotes/git-github-com-Bartvds-update-notifier--a420e038'...
+759 error git clone git://github.com/Bartvds/update-notifier/ fatal: unable to connect to github.com:
+759 error git clone git://github.com/Bartvds/update-notifier/ github.com[0: 192.30.252.131]: errno=Connection refused
+760 silly lockFile a420e038-thub-com-Bartvds-update-notifier git://github.com/Bartvds/update-notifier/
+761 verbose about to build /usr/local/lib/node_modules/tsd
+762 info /usr/local/lib/node_modules/tsd unbuild
+763 info preuninstall tsd@0.5.7
+764 info uninstall tsd@0.5.7
+765 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild tsd@0.5.7
+766 verbose /usr/local/bin,[object Object] binRoot
+767 info postuninstall tsd@0.5.7
+768 error Error: Command failed: Cloning into bare repository '/Users/chanon/.npm/_git-remotes/git-github-com-Bartvds-update-notifier--a420e038'...
+768 error fatal: unable to connect to github.com:
+768 error github.com[0: 192.30.252.131]: errno=Connection refused
+768 error
+768 error
+768 error     at ChildProcess.exithandler (child_process.js:637:15)
+768 error     at ChildProcess.EventEmitter.emit (events.js:98:17)
+768 error     at maybeClose (child_process.js:735:16)
+768 error     at Process.ChildProcess._handle.onexit (child_process.js:802:5)
+769 error If you need help, you may report this log at:
+769 error     <http://github.com/isaacs/npm/issues>
+769 error or email it to:
+769 error     <npm-@googlegroups.com>
+770 error System Darwin 13.3.0
+771 error command "/usr/local/Cellar/node/0.10.19/bin/node" "/usr/local/bin/npm" "install" "tsd" "-g"
+772 error cwd /Users/chanon/Desktop/Product Studio/js
+773 error node -v v0.10.19
+774 error npm -v 1.3.11
+775 error code 128
+776 verbose exit [ 1, true ]
